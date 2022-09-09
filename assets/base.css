@@ -241,9 +241,9 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: var(--page-width);
+  max-width: 1181px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 27px;
 }
 
 .page-width-desktop {
@@ -253,7 +253,7 @@ html.no-js .no-js-hidden {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 27px;
   }
 
   .page-width--narrow {
