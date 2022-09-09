@@ -34,6 +34,9 @@
         "colors_background_2": {
           "label": "背景2"
         },
+        "colors_background_3": {
+          "label": "背景3"
+        },
         "gradient_accent_1": {
           "label": "アクセント1のグラデーション"
         },
@@ -45,6 +48,9 @@
         },
         "gradient_background_2": {
           "label": "背景2のグラデーション"
+        },
+        "gradient_background_3": {
+          "label": "背景3のグラデーション"
         }
       }
     },
@@ -377,6 +383,9 @@
         },
         "background_2": {
           "label": "背景2"
+        },
+        "background_3": {
+          "label": "背景3"
         },
         "inverse": {
           "label": "反転"

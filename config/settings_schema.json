@@ -83,6 +83,17 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_3",
+        "default": "#F3F3F3",
+        "label": "t:settings_schema.colors.settings.colors_background_3.label"
+      },
+      {
+        "id": "gradient_background_3",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_background_3.label"
       }
     ]
   },
@@ -509,6 +520,10 @@
             "label": "t:sections.all.colors.background_2.label"
           },
           {
+            "value": "background-3",
+            "label": "t:sections.all.colors.background_3.label"
+          },
+          {
             "value": "inverse",
             "label": "t:sections.all.colors.inverse.label"
           }
@@ -666,6 +681,10 @@
             "label": "t:sections.all.colors.background_2.label"
           },
           {
+            "value": "background-3",
+            "label": "t:sections.all.colors.background_3.label"
+          },
+          {
             "value": "inverse",
             "label": "t:sections.all.colors.inverse.label"
           }
@@ -821,6 +840,10 @@
           {
             "value": "background-2",
             "label": "t:sections.all.colors.background_2.label"
+          },
+          {
+            "value": "background-3",
+            "label": "t:sections.all.colors.background_3.label"
           },
           {
             "value": "inverse",
