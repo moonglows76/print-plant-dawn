@@ -1,4 +1,280 @@
+/*doc
+---
+title: btn-pagetop
+name: btn-pagetop
+category: component
+---
+
+*/
+@media screen and (min-width: 968px) {
+  .btn-pagetop {
+    position: relative;
+    pointer-events: none;
+    -webkit-animation: fadeout 1 200ms ease alternate both;
+            animation: fadeout 1 200ms ease alternate both;
+  }
+  .btn-pagetop.is-active {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-animation: fadein 1 200ms ease alternate both;
+            animation: fadein 1 200ms ease alternate both;
+  }
+  .btn-pagetop a {
+    position: fixed;
+    right: 26px;
+    bottom: 110px;
+  }
+  .btn-pagetop .sprite-icon {
+    font-size: 52px;
+  }
+}
+
+/*doc
+---
+title: footer
+name: footer
+category: component
+---
+
+*/
 .footer {
+  background-color: #424242;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer a:not([disabled]):hover {
+  color: #ffffff;
+}
+.footer__logo {
+  padding: 53px 0 48px;
+  border-bottom: 1px solid #797979;
+}
+@media screen and (min-width: 968px) {
+  .footer__logo {
+    padding-top: 71px;
+    padding-bottom: 74px;
+  }
+}
+.footer__logo-img {
+  font-size: 44px;
+  line-height: 1;
+  text-align: center;
+}
+@media screen and (min-width: 968px) {
+  .footer__logo-img {
+    font-size: 52px;
+    line-height: 1;
+  }
+}
+.footer__logo-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.2em;
+}
+@media screen and (min-width: 968px) {
+  .footer__logo-text {
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+}
+@media screen and (min-width: 968px) {
+  .footer__sitemap-sns {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #797979;
+  }
+}
+.footer__sitemap {
+  font-size: 14px;
+  line-height: 2.5;
+  letter-spacing: 0.24em;
+}
+@media screen and (max-width: 967px) {
+  .footer__sitemap {
+    border-bottom: 1px solid #797979;
+    text-align: center;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .footer__sitemap {
+    font-size: 14px;
+    line-height: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 55px;
+    gap: 55px;
+  }
+}
+.footer__sitemap a {
+  display: inline-block;
+}
+.footer__sitemap a[target=_blank] {
+  pointer-events: auto;
+}
+.footer__sitemap a[target=_blank]::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: url(icon_blank_white.svg) no-repeat 0 0;
+  margin-left: 12px;
+}
+.footer__sitemap a[target=_blank]::after {
+  vertical-align: 1px;
+}
+@media screen and (max-width: 967px) {
+  .footer__sns {
+    padding-top: 46px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .footer__sns {
+    padding-right: 14px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .footer__sns-heading {
+    font-size: 14px;
+    line-height: 2;
+    color: #b4b4b4;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 0.2em;
+  }
+}
+.footer__sns ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 20px;
+  line-height: 1;
+}
+@media screen and (min-width: 968px) {
+  .footer__sns ul {
+    margin-left: -13px;
+    margin-top: 15px;
+  }
+}
+.footer__sns a {
+  color: #b4b4b4;
+  padding: 0 12px;
+}
+@media screen and (min-width: 968px) {
+  .footer__sns a {
+    padding-left: 13px;
+    padding-right: 13px;
+    color: #fff;
+  }
+}
+.footer__company {
+  padding-top: 82px;
+}
+@media screen and (min-width: 968px) {
+  .footer__company {
+    padding-top: 35px;
+    padding-bottom: 33px;
+  }
+}
+.footer__company-link {
+  display: block;
+}
+@media screen and (max-width: 967px) {
+  .footer__company-link {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 968px) {
+  .footer__company-link {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+}
+.footer__company-img {
+  font-size: 32px;
+  line-height: 1;
+}
+.footer__company-text {
+  letter-spacing: 0.18em;
+}
+@media screen and (max-width: 967px) {
+  .footer__company-text {
+    margin-top: 16px;
+    font-size: 9px;
+    line-height: 1.8888888889;
+  }
+}
+@media screen and (min-width: 968px) {
+  .footer__company-text {
+    font-size: 11px;
+    line-height: 1.8181818182;
+    margin-left: 22px;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+@media screen and (max-width: 967px) {
+  .footer__privacy-copyright {
+    padding-top: 48px;
+    padding-bottom: 12px;
+    font-size: 10px;
+    line-height: 2.5;
+    text-align: center;
+    letter-spacing: 0.18em;
+  }
+}
+@media screen and (min-width: 968px) {
+  .footer__privacy-copyright {
+    font-size: 12px;
+    line-height: 1.6666666667;
+    background-color: #303030;
+    letter-spacing: 0.2em;
+  }
+  .footer__privacy-copyright-inner {
+    padding: 20px 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+  }
+}
+.footer__privacy-copyright small {
+  font-size: 100%;
+}
+@media screen and (min-width: 968px) {
+  .footer__privacy {
+    -webkit-order: 1;
+            order: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
@@ -90,6 +366,7 @@
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  background-color: #303030;
 }
 
 @media screen and (min-width: 750px) {
@@ -369,6 +646,7 @@ noscript .localization-selector.link {
 .footer__copyright {
   text-align: center;
   margin-top: 1.5rem;
+  color: #fff;
 }
 
 @media screen and (min-width: 750px) {
@@ -496,7 +774,6 @@ noscript .localization-selector.link {
   text-decoration: underline;
 }
 
-/* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (max-width: 749px) {
     .footer .grid {
@@ -514,3 +791,4 @@ noscript .localization-selector.link {
     }
   }
 }
+*/

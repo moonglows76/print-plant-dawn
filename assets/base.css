@@ -631,6 +631,19 @@ h6:empty {
   display: none;
 }
 
+a {
+  color: rgb(var(--color-link));
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  transition: opacity var(--base-duration) var(--base-timing);
+}
+
+@media screen and (min-width: 968px) {
+  a:not([disabled]):hover {
+    opacity: var(--hover-opacity);
+  }
+}
+
 .link,
 .customer a {
   cursor: pointer;
@@ -2960,3 +2973,68 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+
+/* for screen reader */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* icons */
+.sprite-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  backface-visibility: hidden;
+}
+
+.icon-albatro {
+  width: 3.581445345em;
+}
+
+.icon-albatrodesign {
+  width: 1.051953431em;
+}
+
+.icon-navlogo {
+  width: calc(116.9333 / 42.467 * 1em);
+}
+
+.icon-logo {
+  width: calc(147.6672 / 52.0827 * 1em);
+}
+
+/*doc
+---
+title: display changer
+name: display changer
+category: layout
+---
+*/
+.inline { display: inline !important; }
+.inlineblock { display: inline-block !important; }
+.block { display: block !important; }
+@include for-sp {
+  .sp-none { display: none !important; }
+  .sp-inline { display: inline !important; }
+  .sp-inline-block { display: inline-block !important; }
+  .sp-block { display: block !important; }
+}
+@include for-pc {
+  .pc-none { display: none !important; }
+  .pc-inline { display: inline !important; }
+  .pc-inlineblock { display: inline-block !important; }
+  .pc-block { display: block !important; }
+}
+

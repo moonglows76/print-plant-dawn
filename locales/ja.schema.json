@@ -132,6 +132,10 @@
           "label": "Vimeo",
           "info": "https://vimeo.com/shopify"
         },
+        "social_note_link": {
+          "label": "note",
+          "info": "https://note.com/shopify"
+        },
         "header": {
           "content": "ソーシャルアカウント"
         }
