@@ -116,7 +116,7 @@
     "social_snapchat_link": "",
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCNTAOMzh9dTHRTZNpQi-sXw",
     "social_vimeo_link": "",
-    "social_note_link": "",
+    "social_note_link": "https:\/\/note.com\/albatrodesign",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
@@ -195,9 +195,9 @@
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
-          "margin_top": 48,
-          "padding_top": 36,
-          "padding_bottom": 36
+          "margin_top": 0,
+          "padding_top": 0,
+          "padding_bottom": 0
         }
       },
       "main-password-header": {
