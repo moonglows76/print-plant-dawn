@@ -1,18 +1,16 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#000000",
     "gradient_accent_1": "",
     "colors_accent_2": "#334fb4",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
+    "colors_text": "#000000",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
     "gradient_background_2": "",
-    "colors_background_3": "#424242",
-    "gradient_background_3": "",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -107,17 +105,16 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "https:\/\/twitter.com\/albatrodesign",
-    "social_facebook_link": "https:\/\/www.facebook.com\/print.plant.official",
+    "social_twitter_link": "",
+    "social_facebook_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/printplant_official\/",
+    "social_instagram_link": "",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCNTAOMzh9dTHRTZNpQi-sXw",
+    "social_youtube_link": "",
     "social_vimeo_link": "",
-    "social_note_link": "https:\/\/note.com\/albatrodesign",
-    "predictive_search_enabled": true,
+    "predictive_search_enabled": false,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
@@ -163,41 +160,41 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "",
+              "heading": "Quick links",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "",
-              "menu": "footer-menu-2"
+              "heading": "Info",
+              "menu": "footer"
             }
           },
-          "7db87356-355d-4af8-b650-5b1993ca5ee2": {
-            "type": "link_list",
+          "footer-2": {
+            "type": "text",
             "settings": {
-              "heading": "",
-              "menu": "footer-menu-3"
+              "heading": "Our mission",
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "7db87356-355d-4af8-b650-5b1993ca5ee2"
+          "footer-2"
         ],
         "settings": {
-          "color_scheme": "background-3",
-          "newsletter_enable": false,
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
-          "margin_top": 0,
-          "padding_top": 0,
-          "padding_bottom": 0
+          "margin_top": 48,
+          "padding_top": 36,
+          "padding_bottom": 36
         }
       },
       "main-password-header": {
