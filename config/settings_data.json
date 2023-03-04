@@ -146,29 +146,29 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "sitemap1",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
+              "heading": "sitemap2",
               "menu": "footer-menu-2"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "d2ef8368-d51c-4bed-ba10-a7dc6b1d6c3f": {
+            "type": "link_list",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "sitemap3",
+              "menu": "footer-menu-3"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "d2ef8368-d51c-4bed-ba10-a7dc6b1d6c3f"
         ],
         "settings": {
           "color_scheme": "background-1",
