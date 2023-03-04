@@ -154,7 +154,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "footer"
+              "menu": "footer-menu-2"
             }
           },
           "footer-2": {
