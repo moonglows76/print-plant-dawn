@@ -17,6 +17,15 @@
 .mt-60 {
   margin-top: 60px;
 }
+.mt-90 {
+  margin-top: 90px;
+}
+.mt-120 {
+  margin-top: 120px;
+}
+.mt-150 {
+  margin-top: 150px;
+}
 @media only screen and (min-width: 750px) {
   .md\:mt-5 {
     margin-top: 5px;
@@ -35,6 +44,15 @@
   }
   .md\:mt-60 {
     margin-top: 60px;
+  }
+  .md\mt-90 {
+    margin-top: 90px;
+  }
+  .md\mt-120 {
+    margin-top: 120px;
+  }
+  .md\mt-150 {
+    margin-top: 150px;
   }
 }
 
@@ -3165,6 +3183,7 @@ category: layout
 .mv {
   margin: 0 -27px;
 }
+.mv img,
 .rte .mv img {
   vertical-align: top;
   margin-bottom: 0;
@@ -3183,6 +3202,7 @@ category: layout
     left: 50%;
     transform: translateX(-50%);
   }
+  .mv img,
   .rte .mv img {
     height: auto;
     width: 100%;
@@ -3356,8 +3376,7 @@ category: layout
   margin-top: 0;
 }
 .box-gray .sec-data-submission {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -3391,8 +3410,7 @@ category: layout
 /* sec-data-submission */
 .sec-data-submission {
   background-color: #e8e8e8;
-  margin-left: -27px;
-  margin-right: -27px;
+  margin: 70px -27px;
   padding: 45px 27px;
 }
 .rte .sec-data-submission__text-below-btn {
@@ -3403,8 +3421,7 @@ category: layout
 @media only screen and (min-width: 750px) {
   .sec-data-submission {
     padding: 65px 0 60px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 90px 0;
   }
   .rte .sec-data-submission__text-below-btn {
     font-size: 1.6rem;
