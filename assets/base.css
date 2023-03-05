@@ -1,3 +1,43 @@
+/* animation */
+[data-aos=fade-up] {
+  -webkit-transform: translate3d(0, 20px, 0);
+          transform: translate3d(0, 20px, 0);
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* margin, padding */
 .mt-5 {
   margin-top: 5px;
@@ -2380,6 +2420,7 @@ input[type='checkbox'] {
 }
 
 /* Main Header Layout */
+/*
 .header-wrapper {
   display: block;
   position: relative;
@@ -2865,6 +2906,8 @@ header-menu > details,
 details-disclosure > details {
   position: relative;
 }
+
+*/
 
 @keyframes animateMenuOpen {
   0% {

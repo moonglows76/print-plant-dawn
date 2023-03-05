@@ -250,7 +250,9 @@
       }
     {% endstyle %}
 
+    {{ 'aos.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'section-header.css' | asset_url | stylesheet_tag }}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     if (Shopify.designMode) {
@@ -269,7 +271,69 @@
     {%- endif -%}
 
     {% section 'announcement-bar' %}
-    {% section 'header' %}
+    {% comment %} {% section 'header' %} {% endcomment %}
+    <header class="header">
+      {% if request.page_type == 'index' %}
+        <h1 class="header__logo sp-none pc-none">PRINT + PLANT</h1>
+      {% else %}
+        <div class="header__logo sp-none pc-none">PRINT + PLANT</div>
+      {% endif %}
+      <div class="header__btn-cart-outer" data-aos="fade-up" data-aos-delay="1000">
+      <a href="{{ routes.cart_url }}" class="header__btn-cart">
+        <svg class="icon icon-cart" role="img"><use xlink:href="#cart"></use></svg>
+      </a>
+      </div>
+      <div class="header__btn-shop-outer" data-aos="fade-up" data-aos-delay="750"><a href="/#sec-top-shopinfo" class="header__btn-shop"><svg class="icon icon-pin" role="img"><use xlink:href="#pin"></use></svg></a></div>
+      <div class="header__btn-instagram-outer" data-aos="fade-up" data-aos-delay="500"><a href="{{ settings.social_instagram_link | escape }}" target="_blank" class="header__btn-instagram"><svg class="icon icon-instagram" role="img"><use xlink:href="#instagram"></use></svg></a></div>
+      <div class="header__btn-menu-outer" data-aos="fade-up" data-aos-delay="250">
+        <button class="hamburger hamburger--slider header__btn-menu" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <nav class="nav">
+      <ul class="nav__sitemap">
+        <li><a href="/">
+          <span lang="en">TOP / SHOP INFO</span>
+          <span lang="ja">トップ<span class="separator">/</span>店舗情報</span>
+        </a></li>
+        <li><a href="/pages/letterpress">
+          <span lang="en">LETTERPRESS</span>
+          <span lang="ja">活版印刷</span>
+        </a></li>
+        <li><a href="/pages/special-letterpress">
+          <span lang="en">SPECIAL LETTERPRESS</span>
+          <span lang="ja">特殊活版</span>
+        </a></li>
+        <li><a href="/pages/risograph">
+          <span lang="en">RISOGRAPH</span>
+          <span lang="ja">リソグラフ印刷</span>
+        </a></li>
+        <li><a href="/blogs/workshop">
+          <span lang="en">WORKSHOP</span>
+          <span lang="ja">ワークショップ</span>
+        </a></li>
+        <li><a href="/collections/all">
+          <span lang="en">ONLINE SHOP</span>
+          <span lang="ja">オンラインショップ</span>
+        </a></li>
+      </ul><!-- /.nav__sitemap -->
+      <div class="nav__logo">
+        <div class="nav__logo-img"><svg class="icon icon-navlogo" role="img"><use xlink:href="#navlogo"></use></svg></div>
+        <div class="nav__logo-text">LETTERPRESS PRINT AND PLANTS SPECIMENT<br>BY ALBATRO DESIGN</div>
+      </div><!-- /.nav__logo -->
+      <div class="nav__sns">
+        <ul>
+          <li><a href="{{ settings.social_twitter_link | escape }}" target="_blank"><svg class="icon icon-twitter" role="img"><use xlink:href="#twitter"></use></svg></a></li>
+          <li><a href="{{ settings.social_facebook_link | escape }}" target="_blank"><svg class="icon icon-facebook" role="img"><use xlink:href="#facebook"></use></svg></a></li>
+          <li><a href="{{ settings.social_youtube_link | escape }}" target="_blank"><svg class="icon icon-youtube" role="img"><use xlink:href="#youtube"></use></svg></a></li>
+          <li><a href="{{ settings.social_instagram_link | escape }}" target="_blank"><svg class="icon icon-instagram" role="img"><use xlink:href="#instagram"></use></svg></a></li>
+          <li><a href="{{ settings.social_note_link | escape }}" target="_blank"><svg class="icon icon-note" role="img"><use xlink:href="#note"></use></svg></a></li>
+        </ul><!-- /.nav__sns -->
+    </div>
+    </nav>
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -313,5 +377,8 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="{{ 'aos.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'libs.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
