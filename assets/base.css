@@ -3405,6 +3405,9 @@ category: layout
     margin-left: auto;
     margin-right: auto;
   }
+  .box-gray .sec-data-submission::after {
+    content: none;
+  }
 }
 
 /* sec-data-submission */
@@ -3412,6 +3415,7 @@ category: layout
   background-color: #e8e8e8;
   margin: 70px -27px;
   padding: 45px 27px;
+  position: relative;
 }
 .rte .sec-data-submission__text-below-btn {
   font-size: 1.3rem;
@@ -3420,8 +3424,20 @@ category: layout
 }
 @media only screen and (min-width: 750px) {
   .sec-data-submission {
+    background-color: transparent;
     padding: 65px 0 60px;
     margin: 90px 0;
+  }
+  .sec-data-submission::after {
+    content: '';
+    background-color: #e8e8e8;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
   }
   .rte .sec-data-submission__text-below-btn {
     font-size: 1.6rem;
