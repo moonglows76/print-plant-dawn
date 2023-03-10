@@ -41,11 +41,11 @@
       "settings": {
         "section-name": "fullorder",
         "side-image": "shopify:\/\/shop_images\/img_fullorder_01.jpg",
-        "title": "特殊活版",
-        "description": "<p>PRINT+PLANTでは活版印刷のアナログ性を生かした可能性を独自に研究し、日々新しい印刷手法を開発しています。1つの版で1枚ずつ異なった色合いを印刷したり、溶剤を使った絵画的な特殊表現も可能です。<\/p>",
+        "title": "データ入稿\/お見積",
+        "description": "<p>活版印刷、特殊活版に限らず箔押しなど<br>\nあらゆる加工や印刷に個別にお見積いたします。<br>\n用紙を指定しての発注、相性の良い用紙やインキのご相談も承ります。<br>\nお気軽にお問い合わせください。<\/p>",
         "link": "",
-        "linktext-en": "SPECIAL LETTERPRESS",
-        "linktext-ja": "特殊活版とは<span class=\"separator\">\/<\/span>お見積"
+        "linktext-en": "FULL ORDER",
+        "linktext-ja": "データ入稿\/お見積"
       }
     },
     "a143eef7-1761-481d-b8d1-406fad0ca015": {
