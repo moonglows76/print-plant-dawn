@@ -5,7 +5,7 @@
   <div class="sec-top-primary-service__img">
     <div class="sec-top-primary-service__slider--{{section.settings.section-name}}">
       {% for block in section.blocks %}  
-      <div class="sec-top-primary-service__slider-item"><img src="{{ block.settings.slideshow-image | image_url: 'master' }}" alt="" width="2252" height="1380" loading="lazy"></div>
+      <div class="sec-top-primary-service__slider-item"><img src="{{ block.settings.slideshow-image | img_url: 'master' }}" alt="" width="2252" height="1380" loading="lazy"></div>
       {% endfor %}
     </div>
   </div>

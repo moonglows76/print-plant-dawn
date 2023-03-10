@@ -12,7 +12,7 @@
       <div class="sec-top-shopinfo__slider">
         <div class="sec-top-shopinfo__slider-item"><div class="iframe-wrapper"><div id="player"></div></div></div>
         {% for block in section.blocks %}  
-        <div class="sec-top-shopinfo__slider-item"><img src="{{ block.settings.slideshow-image | image_url: 'master' }}" alt="" width="1388" height="913" loading="lazy"></div>
+        <div class="sec-top-shopinfo__slider-item"><img src="{{ block.settings.slideshow-image | img_url: 'master' }}" alt="" width="1388" height="913" loading="lazy"></div>
         {% endfor %}
       </div>
       <div class="sec-top-shopinfo__slider-arrows-dots slider-arrows-dots is-small-dots"></div>

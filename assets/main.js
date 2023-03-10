@@ -28,6 +28,79 @@ $(function () {
   $secTopShopinfo__menuDetail = $('.sec-top-shopinfo__menu-detail'),
   $btnPagetop = $('.btn-pagetop');
 
+  $('.sec-top-mv__slider').slick({
+    infinite: true,
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    pauseOnHover: false,
+    nextArrow: '<button type="button" class="slick-next"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
+    appendArrows: '.sec-top-mv__slider-arrows-dots',
+    appendDots: '.sec-top-mv__slider-arrows-dots',
+  });
+
+  $('.sec-top-primary-service__slider--businesscard').slick({
+    infinite: true,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 4000,
+      settings: {
+        centerMode: true,
+        centerPadding: '9.5%',
+      }
+    }, {
+      breakpoint: 968,
+      settings: {
+        centerMode: false,
+        centerPadding: '0px',
+      }
+    }],
+  });
+
+  $('.sec-top-primary-service__slider--postcard').slick({
+    infinite: true,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 4000,
+      settings: {
+        centerMode: true,
+        centerPadding: '9.5%',
+      }
+    }, {
+      breakpoint: 968,
+      settings: {
+        centerMode: false,
+        centerPadding: '0px',
+      }
+    }],
+  });
+
+  $('.sec-top-shopinfo__slider').slick({
+    infinite: true,
+    dots: true,
+    arrows: true,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+    pauseOnHover: false,
+    speed: 500,
+    nextArrow: '<button type="button" class="slick-next"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
+    appendArrows: '.sec-top-shopinfo__slider-arrows-dots',
+    appendDots: '.sec-top-shopinfo__slider-arrows-dots',
+  });
 
   // スムーズスクロールの設定
   $('a[href*="#"]').smoothScroll({
