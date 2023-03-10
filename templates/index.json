@@ -1,13 +1,126 @@
 {
   "sections": {
-    "1678001905c1c5450f": {
-      "type": "apps",
+    "3a74d753-7246-4969-a402-fe8e189e3ebf": {
+      "type": "sec-top-primary-service",
+      "blocks": {
+        "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-0": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_businesscard_01.jpg"
+          }
+        },
+        "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-1": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_businesscard_01.jpg"
+          }
+        },
+        "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-2": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_businesscard_01.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-0",
+        "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-1",
+        "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-2"
+      ],
       "settings": {
-        "include_margins": true
+        "section-name": "businesscard",
+        "title": "活版名刺",
+        "description": "<p>活版印刷に最適なデザインと用紙の組合せをご用意しております。<br>作例を見ながら簡単に活版名刺を発注できます。<\/p>",
+        "link": "",
+        "linktext-en": "BUSINESS CARD",
+        "linktext-ja": "活版名刺"
+      }
+    },
+    "a143eef7-1761-481d-b8d1-406fad0ca015": {
+      "type": "sec-top-secondary-service",
+      "settings": {
+        "section-name": "letterpress",
+        "title": "特殊活版",
+        "description": "<p>PRINT+PLANTでは活版印刷のアナログ性を生かした可能性を独自に研究し、日々新しい印刷手法を開発しています。1つの版で1枚ずつ異なった色合いを印刷したり、溶剤を使った絵画的な特殊表現も可能です。<\/p>",
+        "link": "",
+        "linktext-en": "SPECIAL LETTERPRESS",
+        "linktext-ja": "特殊活版とは<span class=\"separator\">\/<\/span>お見積"
+      }
+    },
+    "09de5f0a-e335-4a6e-98e4-7c6d465319d0": {
+      "type": "sec-top-shopinfo",
+      "blocks": {
+        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0": {
+          "type": "slide",
+          "settings": {
+          }
+        },
+        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-1": {
+          "type": "slide",
+          "settings": {
+          }
+        },
+        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-2": {
+          "type": "slide",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0",
+        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-1",
+        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-2"
+      ],
+      "settings": {
+      }
+    },
+    "a468d78d-a087-4ce0-aca8-b1e56151a6df": {
+      "type": "sec-top-shopinfo-2",
+      "blocks": {
+        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-0": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "ORIGINAL GINGER CHAI",
+            "menu-name-ja": "スパイシーチャイ (H\/C)",
+            "menu-price": "¥600"
+          }
+        },
+        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-1": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "ORIGINAL GINGER CHAI",
+            "menu-name-ja": "スパイシーチャイ (H\/C)",
+            "menu-price": "¥600"
+          }
+        },
+        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-2": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "ORIGINAL GINGER CHAI",
+            "menu-name-ja": "スパイシーチャイ (H\/C)",
+            "menu-price": "¥600"
+          }
+        }
+      },
+      "block_order": [
+        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-0",
+        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-1",
+        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-2"
+      ],
+      "settings": {
+      }
+    },
+    "00aa0cfd-d7a4-49b5-9c5c-3f7e9aef31dc": {
+      "type": "sec-top-shopinfo-3",
+      "settings": {
       }
     }
   },
   "order": [
-    "1678001905c1c5450f"
+    "3a74d753-7246-4969-a402-fe8e189e3ebf",
+    "a143eef7-1761-481d-b8d1-406fad0ca015",
+    "09de5f0a-e335-4a6e-98e4-7c6d465319d0",
+    "a468d78d-a087-4ce0-aca8-b1e56151a6df",
+    "00aa0cfd-d7a4-49b5-9c5c-3f7e9aef31dc"
   ]
 }
