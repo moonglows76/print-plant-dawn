@@ -36,6 +36,18 @@
         "linktext-ja": "活版名刺"
       }
     },
+    "2faaeed3-335a-46cf-bf0c-3c722ae9562d": {
+      "type": "sec-top-secondary-service",
+      "settings": {
+        "section-name": "fullorder",
+        "side-image": "shopify:\/\/shop_images\/img_fullorder_01.jpg",
+        "title": "特殊活版",
+        "description": "<p>PRINT+PLANTでは活版印刷のアナログ性を生かした可能性を独自に研究し、日々新しい印刷手法を開発しています。1つの版で1枚ずつ異なった色合いを印刷したり、溶剤を使った絵画的な特殊表現も可能です。<\/p>",
+        "link": "",
+        "linktext-en": "SPECIAL LETTERPRESS",
+        "linktext-ja": "特殊活版とは<span class=\"separator\">\/<\/span>お見積"
+      }
+    },
     "a143eef7-1761-481d-b8d1-406fad0ca015": {
       "type": "sec-top-secondary-service",
       "settings": {
@@ -119,6 +131,7 @@
   },
   "order": [
     "3a74d753-7246-4969-a402-fe8e189e3ebf",
+    "2faaeed3-335a-46cf-bf0c-3c722ae9562d",
     "a143eef7-1761-481d-b8d1-406fad0ca015",
     "09de5f0a-e335-4a6e-98e4-7c6d465319d0",
     "a468d78d-a087-4ce0-aca8-b1e56151a6df",
