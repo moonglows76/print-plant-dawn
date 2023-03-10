@@ -1,0 +1,128 @@
+{{ 'section-top-shopinfo.css' | asset_url | stylesheet_tag }}
+
+<section class="sec-top-shopinfo">
+  <div class="sec-top-shopinfo__body--middle">
+    <div class="sec-top-shopinfo__detail wrapper container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="sec-top-shopinfo__map-link"><a href="https://g.page/PrintPlant?share" target="_blank">GOOGLE MAP<svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></a></div>
+          <div class="sec-top-shopinfo__info-menu">
+            <div class="sec-top-shopinfo__info">
+              <h4 class="sec-top-shopinfo__info-heading sp-none">SHOP INFO</h4>
+              <div class="sec-top-shopinfo__business-hour">
+                <div class="sec-top-shopinfo__business-hour-open" data-aos="fade-up" data-aos-delay="250">OPEN 13:00 - 19:00</div>
+                <div class="sec-top-shopinfo__business-hour-print pc-none">PRINT UNTIL 19:00</div>
+              </div>
+              <ul class="sec-top-shopinfo__day">
+                <li class="sec-top-shopinfo__day-item" data-aos="fade-up" data-aos-delay="1750">
+                  <div class="sec-top-shopinfo__day-img"><svg class="icon icon-openday" role="img"><use xlink:href="#openday"></use></svg></div>
+                  <div class="sec-top-shopinfo__day-text">MON</div>
+                </li>
+                <li class="sec-top-shopinfo__day-item" data-aos="fade-up" data-aos-delay="1500">
+                  <div class="sec-top-shopinfo__day-img"><svg class="icon icon-openday" role="img"><use xlink:href="#openday"></use></svg></div>
+                  <div class="sec-top-shopinfo__day-text">TUE</div>
+                </li>
+                <li class="sec-top-shopinfo__day-item" data-aos="fade-up" data-aos-delay="1250">
+                  <div class="sec-top-shopinfo__day-img"><svg class="icon icon-openday" role="img"><use xlink:href="#openday"></use></svg></div>
+                  <div class="sec-top-shopinfo__day-text">WED</div>
+                </li>
+                <li class="sec-top-shopinfo__day-item" data-aos="fade-up" data-aos-delay="1000">
+                  <div class="sec-top-shopinfo__day-img"><svg class="icon icon-openday" role="img"><use xlink:href="#openday"></use></svg></div>
+                  <div class="sec-top-shopinfo__day-text">THR</div>
+                </li>
+                <li class="sec-top-shopinfo__day-item" data-aos="fade-up" data-aos-delay="750">
+                  <div class="sec-top-shopinfo__day-img"><svg class="icon icon-openday" role="img"><use xlink:href="#openday"></use></svg></div>
+                  <div class="sec-top-shopinfo__day-text">FRI</div>
+                </li>
+                <li class="sec-top-shopinfo__day-item is-closeday" data-aos="fade-up" data-aos-delay="500">
+                  <div class="sec-top-shopinfo__day-img"><svg class="icon icon-closeday" role="img"><use xlink:href="#closeday"></use></svg></div>
+                  <div class="sec-top-shopinfo__day-text">SAT</div>
+                </li>
+                <li class="sec-top-shopinfo__day-item" data-aos="fade-up" data-aos-delay="250">
+                  <div class="sec-top-shopinfo__day-img"><svg class="icon icon-openday" role="img"><use xlink:href="#openday"></use></svg></div>
+                  <div class="sec-top-shopinfo__day-text">SUN</div>
+                </li>
+              </ul>
+              <ul class="sec-top-shopinfo__sns sp-none">
+                <li class="sec-top-shopinfo__sns-item"><a href="https://www.facebook.com/print.plant.official" target="_blank"><svg class="icon icon-facebook" role="img"><use xlink:href="#facebook"></use></svg></a></li>
+                <li class="sec-top-shopinfo__sns-item"><a href="https://www.instagram.com/printplant_official/" target="_blank"><svg class="icon icon-instagram" role="img"><use xlink:href="#instagram"></use></svg></a></li>
+              </ul>
+              <p class="sec-top-shopinfo__regular-holiday sp-none" data-aos="fade-up" data-aos-delay="250">
+                <span lang="ja">毎週土曜定休 / 祝日の営業は事前にSNS等でご確認ください</span>
+                <span lang="en">Closed on Saturdays<br>Please check SNS in advance for holiday opening hours.</span>
+              </p>
+              <p class="sec-top-shopinfo__takeout sp-none" data-aos="fade-up" data-aos-delay="250"><svg class="icon icon-checkedbox" role="img"><use xlink:href="#checkedbox"></use></svg>テイクアウトのみの販売も致しております</p>
+              <p class="sec-top-shopinfo__address" data-aos="fade-up" data-aos-delay="250">住所<br>
+              〒152-0022 東京都目黒区柿の木坂1丁目32-17 PRINT+PLANT</p>
+            </div><!-- /.sec-top-shopinfo__info -->
+            <div class="sec-top-shopinfo__menu">
+              <h4 class="sec-top-shopinfo__menu-heading sp-none">CAFE MENU</h4>
+              <button type="button" class="sec-top-shopinfo__menu-btn btn btn-toggle btn-toggle-gray pc-none">CAFE MENU</button>
+              <div class="sec-top-shopinfo__menu-detail">
+                {% for block in section.blocks %}  
+                <dl>
+                  <dt>
+                    <span lang="en">{{ block.settings.menu-name-en }} - </span>
+                    <span lang="ja">{{ block.settings.menu-name-ja }}</span>
+                  </dt>
+                  <dd>{{ block.settings.menu-price }}</dd>
+                </dl>
+                {% endfor %}
+                <p class="pc-none"><svg class="icon icon-checkedbox" role="img"><use xlink:href="#checkedbox"></use></svg>テイクアウトのみの販売も致しております</p>
+              </div><!-- /.sec-top-shopinfo__menu-detail -->
+            </div><!-- /.sec-top-shopinfo__menu -->
+          </div><!-- /.sec-top-shopinfo__info-menu -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "ショップ情報中部",
+    "blocks":[
+      {
+        "type": "menu",
+        "name": "メニュー",
+        "settings":[
+          {
+            "type": "text",
+            "id": "menu-name-en",
+            "label": "名称",
+            "default": "ORIGINAL GINGER CHAI"
+          },
+          {
+            "type": "text",
+            "id": "menu-name-ja",
+            "label": "名称",
+            "default": "スパイシーチャイ (H/C)"
+          },
+          {
+            "type": "text",
+            "id": "menu-price",
+            "label": "価格",
+            "default": "¥600"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "ショップ情報中部",
+        "category": "トップページ",
+        "blocks": [
+          { 
+            "type": "menu"
+          },
+          {
+            "type": "menu"
+          },
+          {
+            "type": "menu"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

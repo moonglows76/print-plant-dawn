@@ -1,0 +1,84 @@
+{{ 'section-top-mv.css' | asset_url | stylesheet_tag }}
+
+<div class="sec-top-mv">
+  <div class="sec-top-mv__slider">
+    {% for block in section.blocks %}  
+    <div class="sec-top-mv__slider-item"><img src="{{ block.settings.slideshow-image | image_url: 'master' }}" alt="" width="3006" height="1796" loading="lazy"></div>
+    {% endfor %}
+  </div>
+  <div class="sec-top-mv__slider-arrows-dots slider-arrows-dots"></div>
+  <div class="sec-top-mv__shop-company" data-aos="fade-up" data-aos-delay="250">
+    <div class="sec-top-mv__shop">
+      <h1 class="sec-top-mv__shop-img">
+        <span class="sr-only">{{section.settings.title}}</span>
+        <svg class="icon icon-logo" role="img"><use xlink:href="#logo"></use></svg>
+      </h1>
+      <div class="sec-top-mv__shop-text">{{section.settings.description-en}}</div>
+    </div>
+    <div class="sec-top-mv__company">
+      <div class="sec-top-mv__company-text">{{section.settings.description-ja}}</div>
+      <div class="sec-top-mv__company-img"><svg class="icon icon-albatro" role="img"><use xlink:href="#albatro"></use></svg></div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "メインビジュアル",
+  "settings": [
+    {
+      "id": "title",
+      "type": "html",
+      "label": "見出し",
+      "default": "PRINT + PLANT"
+    },
+    {
+      "id": "description-en",
+      "type": "html",
+      "label": "説明文",
+      "default": "LETTERPRESS AND PLANTS SPECIMENT<br>BY ALBATRO DESIGN"
+    },
+    {
+      "id": "description-ka",
+      "type": "html",
+      "label": "説明文",
+      "default": "デザイン会社の<br>運営する活版印刷所"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "スライド",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slideshow-image",
+          "label": "画像"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "メインビジュアル",
+      "category": "トップページ",
+      "blocks": [
+        { 
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

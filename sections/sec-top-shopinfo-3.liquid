@@ -1,0 +1,27 @@
+{{ 'section-top-shopinfo.css' | asset_url | stylesheet_tag }}
+
+<section class="sec-top-shopinfo">
+  <div class="sec-top-shopinfo__body--bottom">
+    <div class="sec-top-shopinfo__contact">
+      <div class="wrapper container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="/pages/contact" class="btn btn-gray">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "ショップ情報下部",
+    "presets": [
+      {
+        "name": "ショップ情報下部",
+        "category": "トップページ"
+      }
+    ]
+  }
+{% endschema %}

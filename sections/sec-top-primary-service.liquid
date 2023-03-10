@@ -1,0 +1,111 @@
+{{ 'section-top-primary-service.css' | asset_url | stylesheet_tag }}
+
+<section class="sec-top-primary-service sec-top-primary-service--{{section.settings.section-name}}" id="sec-top-{{section.settings.section-name}}">
+  <div class="sec-top-primary-service__free-shipping">送料無料</div>
+  <div class="sec-top-primary-service__img">
+    <div class="sec-top-primary-service__slider--{{section.settings.section-name}}">
+      {% for block in section.blocks %}  
+      <div class="sec-top-primary-service__slider-item"><img src="{{ block.settings.slideshow-image | image_url: 'master' }}" alt="" width="2252" height="1380" loading="lazy"></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="sec-top-primary-service__text-btn-wrapper wrapper container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sec-top-primary-service__text-btn">
+          <div class="sec-top-primary-service__text sp-none">
+            <h2>{{section.settings.title}}</h2>
+            <div data-aos="fade-up" data-aos-delay="250">
+            {{section.settings.description}}
+            </div>
+          </div>
+          <div class="sec-top-primary-service__btn">
+            <a href="{{section.settings.link}}" class="btn btn-en-ja">
+              <span lang="en">{{section.settings.linktext-en}}</span>
+              <span lang="ja">{{section.settings.linktext-ja}}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "プライマリサービス",
+  "settings": [
+    {
+      "id": "section-name",
+      "type": "text",
+      "label": "セクション名",
+      "default": "businesscard"
+    },
+    {
+      "id": "title",
+      "type": "html",
+      "label": "見出し",
+      "default": "活版名刺"
+    },
+    {
+      "id": "description",
+      "type": "html",
+      "label": "説明文",
+      "default": "<p>活版印刷に最適なデザインと用紙の組合せをご用意しております。<br>作例を見ながら簡単に活版名刺を発注できます。</p>"
+    },
+    {
+      "id": "link",
+      "type": "url",
+      "label": "ボタンリンク"
+    },
+    {
+      "id": "linktext-en",
+      "type": "text",
+      "label": "リンクテキスト英語",
+      "default": "BUSINESS CARD"
+    },
+    {
+      "id": "linktext-ja",
+      "type": "html",
+      "label": "リンクテキスト日本語",
+      "default": "活版名刺"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "スライド",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slideshow-image",
+          "label": "画像"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "プライマリサービス",
+      "category": "トップページ",
+      "blocks": [
+        { 
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

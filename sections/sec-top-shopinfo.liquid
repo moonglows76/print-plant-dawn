@@ -1,0 +1,68 @@
+{{ 'section-top-shopinfo.css' | asset_url | stylesheet_tag }}
+
+<section class="sec-top-shopinfo" id="sec-top-shopinfo">
+  <header class="sec-top-shopinfo__header">
+    <h2>
+      <span lang="en">SHOP INFO</span>
+      <span lang="ja">店舗情報</span>
+    </h2>
+  </header>
+  <div class="sec-top-shopinfo__body--top">
+    <div class="sec-top-shopinfo__slider-wrapper">
+      <div class="sec-top-shopinfo__slider">
+        <div class="sec-top-shopinfo__slider-item"><div class="iframe-wrapper"><div id="player"></div></div></div>
+        {% for block in section.blocks %}  
+        <div class="sec-top-shopinfo__slider-item"><img src="{{ block.settings.slideshow-image | image_url: 'master' }}" alt="" width="1388" height="913" loading="lazy"></div>
+        {% endfor %}
+      </div>
+      <div class="sec-top-shopinfo__slider-arrows-dots slider-arrows-dots is-small-dots"></div>
+    </div>
+    <div class="sec-top-shopinfo__catch wrapper container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>“活版印刷と植物”をコンセプトにした<br>カフェショップです</h3>
+          <p data-aos="fade-up" data-aos-delay="250">PRINT+PLANTは活版印刷の相談・見学をしたり、<br class="sp-none">植物をテーマにした特殊活版作品を楽しめるカフェショップです。<br class="sp-none">アロナグ印刷や植物好きな方の憩いの場に、そして皆様のご希望に+プラスして寄り添って行ける空間を目指しております。</p>
+        </div>
+      </div>
+    </div>
+    <div class="sec-top-shopinfo__map" id="sec-top-shopinfo__map">
+      <div id="map"></div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "ショップ情報上部",
+    "blocks":[
+      {
+        "type": "slide",
+        "name": "スライド",
+        "settings":[
+          {
+            "type": "image_picker",
+            "id": "slideshow-image",
+            "label": "画像"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "ショップ情報上部",
+        "category": "トップページ",
+        "blocks": [
+          { 
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
