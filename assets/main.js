@@ -42,7 +42,7 @@ $(function () {
     appendDots: '.sec-top-mv__slider-arrows-dots',
   });
 
-  $('.sec-top-primary-service__slider--businesscard').slick({
+  $('.sec-top-primary-service__slider--letterpress').slick({
     infinite: true,
     dots: false,
     arrows: false,
@@ -65,7 +65,7 @@ $(function () {
     }],
   });
 
-  $('.sec-top-primary-service__slider--postcard').slick({
+  $('.sec-top-primary-service__slider--special-letterpress').slick({
     infinite: true,
     dots: false,
     arrows: false,
