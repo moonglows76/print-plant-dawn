@@ -115,6 +115,7 @@
       "settings": {
         "section-name": "risograph",
         "side-image": "shopify:\/\/shop_images\/img_top-risograph.jpg",
+        "title-en": "RISOGRAPH",
         "title": "リソグラフ印刷",
         "description": "<p>リソグラフは日本発祥の自動孔版印刷機で、とても発色の綺麗な印刷機になります。<br>\n活版印刷、箔押しとの併用印刷も可能です。<br>\n印刷受注だけでなく、Zineやポスター等作品作りのお手伝いも承ります。<\/p>",
         "link": "shopify:\/\/pages\/risograph",
@@ -127,6 +128,7 @@
       "settings": {
         "section-name": "workshop",
         "side-image": "shopify:\/\/shop_images\/img_top-workshop.jpg",
+        "title-en": "WORKSHOP",
         "title": "ワークショップ",
         "description": "<p>PRINT+PLANTでは活版印刷やリソグラフを中心としたアナログ印刷の研究を行っています。他にはない、より突っ込んだ印刷体験をワークショップや教室として定期開催しております。<br>\n是非お気軽にご参加ください。<\/p>",
         "link": "shopify:\/\/blogs\/workshop",
@@ -140,19 +142,19 @@
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_top-info.jpg"
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-info_b22cc2b1-d9c3-450c-aee2-25e7b0d852e4.jpg"
           }
         },
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-1": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_top-info.jpg"
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-info_b22cc2b1-d9c3-450c-aee2-25e7b0d852e4.jpg"
           }
         },
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-2": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_top-info.jpg"
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-info_b22cc2b1-d9c3-450c-aee2-25e7b0d852e4.jpg"
           }
         }
       },
