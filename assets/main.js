@@ -91,7 +91,7 @@ $(function () {
   $('.sec-top-shopinfo__slider').slick({
     infinite: true,
     dots: true,
-    arrows: true,
+    arrows: false,
     // autoplay: true,
     // autoplaySpeed: 3000,
     pauseOnHover: false,

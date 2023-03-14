@@ -15,17 +15,17 @@ category: top
     padding-bottom: 38px;
   }
 }
-.sec-top-secondary-service--fullorder {
+.sec-top-secondary-service--risograph {
   background-color: #e8e8e8;
 }
-.sec-top-secondary-service--fullorder .btn.btn-en-ja:hover {
+.sec-top-secondary-service--risograph .btn.btn-en-ja:hover {
   background-color: #dfdfdf;
 }
-.sec-top-secondary-service--letterpress {
+.sec-top-secondary-service--workshop {
   padding-bottom: 64px;
 }
 @media screen and (min-width: 968px) {
-  .sec-top-secondary-service--letterpress {
+  .sec-top-secondary-service--workshop {
     padding-bottom: 106px;
   }
 }

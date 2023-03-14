@@ -15,27 +15,27 @@ category: top
   }
 }
 @media screen and (max-width: 967px) {
-  .sec-top-primary-service--businesscard {
+  .sec-top-primary-service--letterpress {
     margin-top: 36px;
     margin-bottom: 36px;
   }
 }
 @media screen and (max-width: 967px) {
-  .sec-top-primary-service--postcard {
+  .sec-top-primary-service--special-letterpress {
     margin-bottom: 45px;
   }
 }
 @media screen and (min-width: 968px) {
-  .sec-top-primary-service--postcard {
+  .sec-top-primary-service--special-letterpress {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 968px) {
-  .sec-top-primary-service--postcard .sec-top-primary-service__text h2 {
+  .sec-top-primary-service--special-letterpress .sec-top-primary-service__text h2 {
     letter-spacing: 0.04em;
   }
 }
-.sec-top-primary-service--postcard .btn [lang=ja] {
+.sec-top-primary-service--special-letterpress .btn [lang=ja] {
   margin-top: 8px;
   font-size: 16px;
   letter-spacing: 0;
