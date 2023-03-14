@@ -780,6 +780,20 @@ table:not([class]) th {
   text-align: right;
 }
 
+@media screen and (min-width: 750px) {
+  .md-left {
+    text-align: left !important;
+  }
+  
+  .md-center {
+    text-align: center !important;
+  }
+  
+  .md-right {
+    text-align: right !important;
+  }
+}
+
 .uppercase {
   text-transform: uppercase;
 }
