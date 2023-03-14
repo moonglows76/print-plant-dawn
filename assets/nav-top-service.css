@@ -1,0 +1,51 @@
+/*doc
+---
+title: nav-top-service
+name: nav-top-service
+category: top
+---
+
+*/
+@media screen and (min-width: 968px) {
+  .nav-top-service {
+    margin-top: 66px;
+    margin-bottom: 82px;
+  }
+  .nav-top-service__list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+  }
+  .nav-top-service__link {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .nav-top-service__link:not([disabled]):hover {
+    color: #000;
+  }
+  .nav-top-service__img {
+    font-size: 24px;
+    line-height: 1;
+  }
+  .nav-top-service__text [lang=en] {
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+    color: #797979;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+  .nav-top-service__text [lang=ja] {
+    margin-top: 15px;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.12em;
+  }
+}

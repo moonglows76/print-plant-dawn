@@ -1,0 +1,74 @@
+{{ 'nav-top-service.css' | asset_url | stylesheet_tag }}
+
+<nav class="nav-top-service sp-none">
+  <div class="wrapper container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav-top-service__list">
+          <li class="nav-top-service__item" data-aos="fade-up" data-aos-delay="1250">
+            <a href="/pages/letterpress" class="nav-top-service__link">
+              <span class="nav-top-service__img"><svg class="icon icon-businesscard" role="img"><use xlink:href="#letterpress"></use></svg></span>
+              <span class="nav-top-service__text">
+                <span lang="en">LETTERPRESS</span>
+                <span lang="ja">活版名刺</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-top-service__item" data-aos="fade-up" data-aos-delay="1000">
+            <a href="/pages/special-letterpress" class="nav-top-service__link">
+              <span class="nav-top-service__img"><svg class="icon icon-sp_letterpress" role="img"><use xlink:href="#sp_letterpress"></use></svg></span>
+              <span class="nav-top-service__text">
+                <span lang="en">SPECIAL LETTERPRES</span>
+                <span lang="ja">特殊活版</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-top-service__item" data-aos="fade-up" data-aos-delay="750">
+            <a href="/pages/risograph" class="nav-top-service__link">
+              <span class="nav-top-service__img"><svg class="icon icon-risograph" role="img"><use xlink:href="#risograph"></use></svg></span>
+              <span class="nav-top-service__text">
+                <span lang="en">RISOGRAPH</span>
+                <span lang="ja">リソグラフ印刷</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-top-service__item" data-aos="fade-up" data-aos-delay="500">
+            <a href="/blogs/workshop" class="nav-top-service__link">
+              <span class="nav-top-service__img"><svg class="icon icon-workshop" role="img"><use xlink:href="#workshop"></use></svg></span>
+              <span class="nav-top-service__text">
+                <span lang="en">WORKSHOP</span>
+                <span lang="ja">ワークショップ</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-top-service__item" data-aos="fade-up" data-aos-delay="250">
+            <a href="/collections/all" class="nav-top-service__link">
+              <span class="nav-top-service__img"><svg class="icon icon-cart" role="img"><use xlink:href="#cart"></use></svg></span>
+              <span class="nav-top-service__text">
+                <span lang="en">ONLINE SHOP</span>
+                <span lang="ja">オンラインショップ</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+{% schema %}
+{
+  "name": "ページ内ナビゲーション",
+  "presets": [
+    {
+      "name": "ページ内ナビゲーション",
+      "category": "トップページ"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
