@@ -135,16 +135,19 @@
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0": {
           "type": "slide",
           "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-info.jpg"
           }
         },
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-1": {
           "type": "slide",
           "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-info.jpg"
           }
         },
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-2": {
           "type": "slide",
           "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-info.jpg"
           }
         }
       },
@@ -170,16 +173,72 @@
         "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-1": {
           "type": "menu",
           "settings": {
-            "menu-name-en": "ORIGINAL GINGER CHAI",
-            "menu-name-ja": "スパイシーチャイ (H\/C)",
-            "menu-price": "¥600"
+            "menu-name-en": "COFFEE \/ ORIGINAL",
+            "menu-name-ja": "ドリップコーヒー (H\/C)",
+            "menu-price": "¥500"
+          }
+        },
+        "328c7a65-64e2-4fda-a4e3-a258026ce151": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "COFFEE \/ MILK",
+            "menu-name-ja": "ミルクコーヒー (H\/C)",
+            "menu-price": "¥500"
           }
         },
         "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-2": {
           "type": "menu",
           "settings": {
-            "menu-name-en": "ORIGINAL GINGER CHAI",
-            "menu-name-ja": "スパイシーチャイ (H\/C)",
+            "menu-name-en": "DECAF COFFEE",
+            "menu-name-ja": "カフェインレス コーヒー (H\/C)",
+            "menu-price": "¥500"
+          }
+        },
+        "7fc0977e-3fb3-45f6-b1dd-109bdfdf162f": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "COFFEE \/ MILK",
+            "menu-name-ja": "カフェオレ (H\/C)",
+            "menu-price": "¥500"
+          }
+        },
+        "98326024-89ea-4127-9563-8c0c5a9173cf": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "ONION SOUP",
+            "menu-name-ja": "能登半島玉葱スープ(H)",
+            "menu-price": "¥500"
+          }
+        },
+        "c60d1cfb-949a-486e-844f-4e753c7d76a0": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "PERRIER",
+            "menu-name-ja": "ペリエ (C)",
+            "menu-price": "¥500"
+          }
+        },
+        "8a290c07-14fb-4e41-a6dc-835e03727ad6": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "CHINESE BLOOMING TEA",
+            "menu-name-ja": "工芸茶A (H)",
+            "menu-price": "¥600"
+          }
+        },
+        "3616bcbd-b732-485e-beeb-8b4947b26a6b": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "CHINESE BLOOMING TEA",
+            "menu-name-ja": "工芸茶B (H)",
+            "menu-price": "¥600"
+          }
+        },
+        "c6bf47f9-c18a-4572-8b60-e0b11da0127c": {
+          "type": "menu",
+          "settings": {
+            "menu-name-en": "CHINESE BLOOMING TEA",
+            "menu-name-ja": "工芸茶C (H)",
             "menu-price": "¥600"
           }
         }
@@ -187,7 +246,14 @@
       "block_order": [
         "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-0",
         "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-1",
-        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-2"
+        "328c7a65-64e2-4fda-a4e3-a258026ce151",
+        "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-2",
+        "7fc0977e-3fb3-45f6-b1dd-109bdfdf162f",
+        "98326024-89ea-4127-9563-8c0c5a9173cf",
+        "c60d1cfb-949a-486e-844f-4e753c7d76a0",
+        "8a290c07-14fb-4e41-a6dc-835e03727ad6",
+        "3616bcbd-b732-485e-beeb-8b4947b26a6b",
+        "c6bf47f9-c18a-4572-8b60-e0b11da0127c"
       ],
       "settings": {
       }
