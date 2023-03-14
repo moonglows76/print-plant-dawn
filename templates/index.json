@@ -1,5 +1,38 @@
 {
   "sections": {
+    "1eb81f98-29f8-48ce-abc5-777a47124119": {
+      "type": "sec-top-mv",
+      "blocks": {
+        "template--15861052735659__1eb81f98-29f8-48ce-abc5-777a47124119-16787706410b01c557-0": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_slider_01.jpg"
+          }
+        },
+        "template--15861052735659__1eb81f98-29f8-48ce-abc5-777a47124119-16787706410b01c557-1": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_slider_01.jpg"
+          }
+        },
+        "template--15861052735659__1eb81f98-29f8-48ce-abc5-777a47124119-16787706410b01c557-2": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_slider_01.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15861052735659__1eb81f98-29f8-48ce-abc5-777a47124119-16787706410b01c557-0",
+        "template--15861052735659__1eb81f98-29f8-48ce-abc5-777a47124119-16787706410b01c557-1",
+        "template--15861052735659__1eb81f98-29f8-48ce-abc5-777a47124119-16787706410b01c557-2"
+      ],
+      "settings": {
+        "title": "PRINT + PLANT",
+        "description-en": "LETTERPRESS AND PLANTS SPECIMENT<br>BY ALBATRO DESIGN",
+        "description-ka": "デザイン会社の<br>運営する活版印刷所"
+      }
+    },
     "3a74d753-7246-4969-a402-fe8e189e3ebf": {
       "type": "sec-top-primary-service",
       "blocks": {
@@ -28,36 +61,72 @@
         "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-2"
       ],
       "settings": {
-        "section-name": "businesscard",
+        "section-name": "letterpress",
         "title": "活版名刺",
-        "description": "<p>活版印刷に最適なデザインと用紙の組合せをご用意しております。<br>作例を見ながら簡単に活版名刺を発注できます。<\/p>",
-        "link": "",
-        "linktext-en": "BUSINESS CARD",
+        "description": "<p>活版多色刷りや単色刷り、ご希望の用紙や箔押し加工など柔軟にご相談ください。<br>\n活版名刺に最適なレイアウトデザインと用紙の組合せもご用意しております。<\/p>",
+        "link": "shopify:\/\/pages\/letterpress",
+        "linktext-en": "LETTERPRESS",
+        "linktext-ja": "活版名刺"
+      }
+    },
+    "3c0427e2-e802-4e3b-b43a-8bea767da0d0": {
+      "type": "sec-top-primary-service",
+      "blocks": {
+        "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-0": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-special-letterpress.jpg"
+          }
+        },
+        "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-1": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-special-letterpress.jpg"
+          }
+        },
+        "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-2": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/img_top-special-letterpress.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-0",
+        "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-1",
+        "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-2"
+      ],
+      "settings": {
+        "section-name": "special-letterpress",
+        "title": "特殊活版",
+        "description": "<p>活版印刷の技術を研究、応用した当店だけの特殊な印刷技法を”特殊活版”と名付けました。<br>\n今まで見たことのないような新しい活版印刷の表現をお試しください。<\/p>",
+        "link": "shopify:\/\/pages\/special-letterpress",
+        "linktext-en": "SPECIAL LETTERPRESS",
         "linktext-ja": "活版名刺"
       }
     },
     "2faaeed3-335a-46cf-bf0c-3c722ae9562d": {
       "type": "sec-top-secondary-service",
       "settings": {
-        "section-name": "fullorder",
-        "side-image": "shopify:\/\/shop_images\/img_fullorder_01.jpg",
-        "title": "データ入稿\/お見積",
-        "description": "<p>活版印刷、特殊活版に限らず箔押しなど<br>\nあらゆる加工や印刷に個別にお見積いたします。<br>\n用紙を指定しての発注、相性の良い用紙やインキのご相談も承ります。<br>\nお気軽にお問い合わせください。<\/p>",
-        "link": "",
-        "linktext-en": "FULL ORDER",
-        "linktext-ja": "データ入稿\/お見積"
+        "section-name": "risograph",
+        "side-image": "shopify:\/\/shop_images\/img_top-risograph.jpg",
+        "title": "リソグラフ印刷",
+        "description": "<p>リソグラフは日本発祥の自動孔版印刷機で、とても発色の綺麗な印刷機になります。<br>\n活版印刷、箔押しとの併用印刷も可能です。<br>\n印刷受注だけでなく、Zineやポスター等作品作りのお手伝いも承ります。<\/p>",
+        "link": "shopify:\/\/pages\/risograph",
+        "linktext-en": "RISOGRAPH",
+        "linktext-ja": "リソグラフ印刷"
       }
     },
     "a143eef7-1761-481d-b8d1-406fad0ca015": {
       "type": "sec-top-secondary-service",
       "settings": {
-        "section-name": "letterpress",
-        "side-image": "shopify:\/\/shop_images\/img_special-letter-press_02.jpg",
-        "title": "特殊活版",
-        "description": "<p>PRINT+PLANTでは活版印刷のアナログ性を生かした可能性を独自に研究し、日々新しい印刷手法を開発しています。1つの版で1枚ずつ異なった色合いを印刷したり、溶剤を使った絵画的な特殊表現も可能です。<\/p>",
-        "link": "",
-        "linktext-en": "SPECIAL LETTERPRESS",
-        "linktext-ja": "特殊活版とは<span class=\"separator\">\/<\/span>お見積"
+        "section-name": "workshop",
+        "side-image": "shopify:\/\/shop_images\/img_top-workshop.jpg",
+        "title": "ワークショップ",
+        "description": "<p>PRINT+PLANTでは活版印刷やリソグラフを中心としたアナログ印刷の研究を行っています。他にはない、より突っ込んだ印刷体験をワークショップや教室として定期開催しております。<br>\n是非お気軽にご参加ください。<\/p>",
+        "link": "shopify:\/\/blogs\/workshop",
+        "linktext-en": "WORKSHOP",
+        "linktext-ja": "ワークショップ"
       }
     },
     "09de5f0a-e335-4a6e-98e4-7c6d465319d0": {
@@ -130,7 +199,9 @@
     }
   },
   "order": [
+    "1eb81f98-29f8-48ce-abc5-777a47124119",
     "3a74d753-7246-4969-a402-fe8e189e3ebf",
+    "3c0427e2-e802-4e3b-b43a-8bea767da0d0",
     "2faaeed3-335a-46cf-bf0c-3c722ae9562d",
     "a143eef7-1761-481d-b8d1-406fad0ca015",
     "09de5f0a-e335-4a6e-98e4-7c6d465319d0",
