@@ -62,11 +62,11 @@
       ],
       "settings": {
         "section-name": "letterpress",
-        "title": "活版名刺",
+        "title": "活版印刷",
         "description": "<p>活版多色刷りや単色刷り、ご希望の用紙や箔押し加工など柔軟にご相談ください。<br>\n活版名刺に最適なレイアウトデザインと用紙の組合せもご用意しております。<\/p>",
         "link": "shopify:\/\/pages\/letterpress",
         "linktext-en": "LETTERPRESS",
-        "linktext-ja": "活版名刺"
+        "linktext-ja": "活版印刷"
       }
     },
     "3c0427e2-e802-4e3b-b43a-8bea767da0d0": {
@@ -102,7 +102,7 @@
         "description": "<p>活版印刷の技術を研究、応用した当店だけの特殊な印刷技法を”特殊活版”と名付けました。<br>\n今まで見たことのないような新しい活版印刷の表現をお試しください。<\/p>",
         "link": "shopify:\/\/pages\/special-letterpress",
         "linktext-en": "SPECIAL LETTERPRESS",
-        "linktext-ja": "活版名刺"
+        "linktext-ja": "特殊活版"
       }
     },
     "2faaeed3-335a-46cf-bf0c-3c722ae9562d": {
