@@ -36,8 +36,8 @@ category: top
   }
 }
 
-.slick-prev,
-.slick-next {
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
   position: static;
   font-family: "Noto Sans JP", sans-serif;
   color: #666;
@@ -49,14 +49,14 @@ category: top
   line-height: 1;
 }
 @media screen and (min-width: 968px) {
-  .slick-prev,
-.slick-next {
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
     font-size: 8px;
     line-height: 1;
   }
 }
-.slick-prev::before,
-.slick-next::before {
+.slick-arrow.slick-prev::before,
+.slick-arrow.slick-next::before {
   color: currentColor;
   display: -webkit-flex;
   display: flex;
@@ -65,24 +65,25 @@ category: top
   -webkit-justify-content: center;
           justify-content: center;
 }
-.slick-prev:hover, .slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-prev:focus,
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-next:focus {
   color: currentColor;
 }
-.slick-prev {
+.slick-arrow.slick-prev {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.slick-prev:before {
+.slick-arrow.slick-prev:before {
   content: "";
 }
 
-.slick-next {
+.slick-arrow.slick-next {
   -webkit-order: 1;
           order: 1;
 }
-.slick-next:before {
+.slick-arrow.slick-next:before {
   content: "";
 }
 

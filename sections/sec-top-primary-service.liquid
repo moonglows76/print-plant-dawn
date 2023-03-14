@@ -1,3 +1,4 @@
+{{ 'top-btns.css' | asset_url | stylesheet_tag }}
 {{ 'section-top-primary-service.css' | asset_url | stylesheet_tag }}
 
 <section class="sec-top-primary-service sec-top-primary-service--{{section.settings.section-name}}" id="sec-top-{{section.settings.section-name}}">
@@ -13,7 +14,7 @@
     <div class="row">
       <div class="col-xs-12">
         <div class="sec-top-primary-service__text-btn">
-          <div class="sec-top-primary-service__text sp-none">
+          <div class="sec-top-primary-service__text">
             <h2>{{section.settings.title}}</h2>
             <div data-aos="fade-up" data-aos-delay="250">
             {{section.settings.description}}

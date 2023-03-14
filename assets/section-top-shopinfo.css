@@ -21,6 +21,7 @@ category: top
 }
 .sec-top-shopinfo__header h2 {
   text-align: center;
+  margin: 0;
 }
 .sec-top-shopinfo__header h2 [lang=en] {
   display: block;

@@ -16,6 +16,9 @@ category: top
     display: flex;
     -webkit-justify-content: space-around;
             justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   .nav-top-service__link {
     display: -webkit-flex;

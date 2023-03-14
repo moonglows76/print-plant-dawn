@@ -1,23 +1,27 @@
+{{ 'top-btns.css' | asset_url | stylesheet_tag }}
 {{ 'section-top-secondary-service.css' | asset_url | stylesheet_tag }}
 
-<section class="sec-top-secondary-service sec-top-secondary-service--{{section.settings.section-name}}" id="sec-top-{{section.settings.section-name}}">
+<section class="sec-top-secondary-service sec-top-secondary-service--{{ section.settings.section-name }}" id="sec-top-{{ section.settings.section-name }}">
   <div class="wrapper container-fluid">
     <div class="row middle-sm">
       <div class="col-xs-12 col-sm-7">
-        <div class="sec-top-secondary-service__img"><img src="{{section.settings.side-image | img_url: 'master'}}" alt="" width="2252" height="1380" loading="lazy"></div>
+        <div class="sec-top-secondary-service__img"><img src="{{ section.settings.side-image | img_url: 'master' }}" alt="" width="2252" height="1380" loading="lazy"></div>
       </div>
       <div class="col-xs-12 col-sm-5">
         <div class="sec-top-secondary-service__text-btn">
           <div class="sec-top-secondary-service__text">
-            <h2>{{section.settings.title}}</h2>
+            <h2>
+              <span lang="en" class="sp-none">{{ section.settings.title-en }}</span>
+              <span lang="ja">{{ section.settings.title }}</span>
+            </h2>
             <div data-aos="fade-up" data-aos-delay="250">
-              {{section.settings.description}}
+              {{ section.settings.description }}
             </div>
           </div>
           <div class="sec-top-secondary-service__btn">
-            <a href="{{section.settings.link}}" class="btn btn-en-ja">
-              <span lang="en">{{section.settings.linktext-en}}</span>
-              <span lang="ja">{{section.settings.linktext-ja}}</span>
+            <a href="{{ section.settings.link }}" class="btn btn-en-ja">
+              <span lang="en">{{ section.settings.linktext-en }}</span>
+              <span lang="ja">{{ section.settings.linktext-ja }}</span>
             </a>
           </div>
         </div>
@@ -41,16 +45,22 @@
       "label": "画像"
     },
     {
+      "id": "title-en",
+      "type": "html",
+      "label": "見出し英語",
+      "default": "RISOGRAPH"
+    },
+    {
       "id": "title",
       "type": "html",
       "label": "見出し",
-      "default": "特殊活版"
+      "default": "リソグラフ印刷"
     },
     {
       "id": "description",
       "type": "html",
       "label": "説明文",
-      "default": "<p>PRINT+PLANTでは活版印刷のアナログ性を生かした可能性を独自に研究し、日々新しい印刷手法を開発しています。1つの版で1枚ずつ異なった色合いを印刷したり、溶剤を使った絵画的な特殊表現も可能です。</p>"
+      "default": "<p>リソグラフは日本発祥の自動孔版印刷機で、とても発色の綺麗な印刷機になります。<br>活版印刷、箔押しとの併用印刷も可能です。<br>印刷受注だけでなく、Zineやポスター等作品作りのお手伝いも承ります。</p>"
     },
     {
       "id": "link",
@@ -61,13 +71,13 @@
       "id": "linktext-en",
       "type": "text",
       "label": "リンクテキスト英語",
-      "default": "SPECIAL LETTERPRESS"
+      "default": "RISOGRAPH"
     },
     {
       "id": "linktext-ja",
       "type": "html",
       "label": "リンクテキスト日本語",
-      "default": "特殊活版とは<span class='separator'>/</span>お見積"
+      "default": "リソグラフ印刷"
     }
   ],
   "presets": [
