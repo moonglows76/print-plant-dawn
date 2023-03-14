@@ -138,3 +138,102 @@ category: top
     margin-top: -38px;
   }
 }
+
+/*doc
+---
+title: sec-top-mv
+name: sec-top-mv
+category: top
+---
+
+*/
+.sec-top-mv {
+  position: relative;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 968px) {
+  .sec-top-mv {
+    padding-bottom: 22px;
+  }
+}
+.sec-top-mv__slider img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.sec-top-mv__shop-company {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.sec-top-mv__shop-img {
+  font-size: 52px;
+  line-height: 1;
+  color: #fff;
+}
+.sec-top-mv__shop-text {
+  margin-top: 24px;
+  font-size: 8px;
+  line-height: 1.75;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.24em;
+}
+@media screen and (min-width: 968px) {
+  .sec-top-mv__shop-text {
+    margin-top: 32px;
+    font-size: 11px;
+    line-height: 1.9090909091;
+  }
+}
+.sec-top-mv__company-text {
+  margin-top: 28px;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.2em;
+}
+@media screen and (min-width: 968px) {
+  .sec-top-mv__company-text {
+    margin-top: 34px;
+    font-size: 17px;
+    line-height: 1.6470588235;
+  }
+}
+.sec-top-mv__company-img {
+  margin-top: 16px;
+  font-size: 26px;
+  line-height: 1;
+}
+@media screen and (min-width: 968px) {
+  .sec-top-mv__company-img {
+    margin-top: 17px;
+    font-size: 35px;
+    line-height: 1;
+  }
+}
+.sec-top-mv__renewal-text {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.6666666667;
+}
+@media screen and (min-width: 968px) {
+  .sec-top-mv__renewal-text {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 1.6470588235;
+  }
+}
