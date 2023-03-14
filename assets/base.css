@@ -3490,3 +3490,16 @@ category: layout
     font-size: 1.6rem;
   }
 }
+.iframe-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  font-size: 1px;
+  line-height: 1;
+}
+.iframe-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
