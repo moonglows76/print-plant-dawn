@@ -1,0 +1,22 @@
+{%- capture product_handle -%}{%- render 'shortcode-render' render: 'handle' default:'' -%}{%- endcapture -%}
+
+{%- paginate collections.all.products by collections.all.all_products_count -%}
+  {%- for tmp in collections.all.products -%}
+    {%- if tmp.handle == product_handle -%}
+      {%- assign product = tmp -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endpaginate -%}
+
+{% if product -%}
+  <section>
+    {%- for image in product.images -%}
+      <figure class="image">
+        <img src="{{ image | img_url:'162x' }}" alt="{{ image.alt | escape }}" width="162" height="162" loading="lazy">
+      </figure>
+      {%- break -%}
+    {%- endfor %}
+    <h2 class="name nameCell">{{ product.title | escape }}</h2>
+  </section>
+{%- endif %}
