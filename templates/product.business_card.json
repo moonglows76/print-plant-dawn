@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-product_business_card",
       "blocks": {
         "title": {
           "type": "title",

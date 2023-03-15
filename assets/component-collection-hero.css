@@ -37,7 +37,13 @@
 }
 
 .collection-hero__title {
-  margin: 2.5rem 0;
+  margin: 70px 0 0;
+}
+@media screen and (min-width: 750px) {
+  .collection-hero__title {
+    margin-top: 140px;
+    margin-bottom: 54px;
+  }
 }
 
 .collection-hero__title + .collection-hero__description {
