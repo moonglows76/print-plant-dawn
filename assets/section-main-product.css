@@ -185,6 +185,9 @@ variant-selects {
 
 .product-form__input .form__label {
   padding-left: 0;
+  font-family: var(--font-sans);
+  color: #606060;
+  margin-bottom: 10px;
 }
 
 fieldset.product-form__input .form__label {
