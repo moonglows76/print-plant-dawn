@@ -69,3 +69,56 @@
 .rte blockquote > * {
   margin: -0.5rem 0 -0.5rem 0;
 }
+
+.rte .print-info {
+  margin: 40px 0 20px;
+}
+.rte .print-info dt {
+  color: #606060;
+  font-family: var(--font-rubik);
+  font-size: 10px;
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 750px) {
+  .rte .print-info dt {
+    font-size: 12px;
+  }
+}
+.rte .print-info dd {
+  background-color: #ececec;
+  margin: 0;
+  padding: 20px 30px;
+}
+/* @media screen and (min-width: 750px) {
+  .rte .print-info dd {
+    padding: 30px 40px;
+  }
+} */
+.rte .print-info table {
+  box-shadow: none;
+  font-size: 11px;
+  font-family: var(--font-sans);
+  table-layout: auto;
+}
+@media screen and (min-width: 750px) {
+  .rte .print-info table {
+    font-size: 15px;
+  }
+}
+.rte .print-info td {
+  border: none;
+  padding: 7px;
+}
+@media screen and (min-width: 750px) {
+  .rte .print-info td {
+    padding: 10px;
+  }
+}
+.rte .print-info td:first-child {
+  padding-left: 0;
+}
+.rte .print-info td:last-child {
+  padding-right: 0;
+}
