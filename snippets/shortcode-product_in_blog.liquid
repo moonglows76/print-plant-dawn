@@ -1,4 +1,8 @@
-{%- capture product_handle -%}{%- render 'shortcode-render' render: 'handle' default:'' -%}{%- endcapture -%}
+{% liquid
+  capture product_handle
+    render 'shortcode-render' render: 'handle' default: ''
+  endcapture
+%}
 
 {%- paginate collections.all.products by collections.all.all_products_count -%}
   {%- for tmp in collections.all.products -%}
