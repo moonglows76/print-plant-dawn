@@ -83,7 +83,13 @@
 
   <section class="instagram-list">
     <div class="page-width page-width--tablet">
-      <h2 class="instagram-list__heading">INSTAGRAM</h2>
+      <h2 class="instagram-list__heading">
+        INSTAGRAM
+        <a href="{{ settings.social_instagram_link }}">
+          {%- render 'icon-instagram' -%}
+          <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+        </a>
+      </h2>
       <ul>
         <li><img src="{{section.settings.image-instagram-1 | img_url: 'master'}}" alt="" width="212" height="212" loading="lazy"></li>
         <li><img src="{{section.settings.image-instagram-2 | img_url: 'master'}}" alt="" width="212" height="212" loading="lazy"></li>

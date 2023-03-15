@@ -167,6 +167,13 @@ category: component
   margin-bottom: 46px;
   text-align: center;
   letter-spacing: 0.22em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 35px;
+}
+.instagram-list__heading a {
+  padding: 10px;
 }
 @media screen and (min-width: 968px) {
   .instagram-list__heading {
