@@ -22,11 +22,29 @@
         "btn-ja": "データ入稿",
         "content": "<p class=\"sec-data-submission__text-below-btn center\">データを入稿しての印刷依頼、お見積はこちらから<\/p>"
       }
+    },
+    "47b2429d-6cd0-4225-9f46-f45748f3b4f3": {
+      "type": "sec-page-h2",
+      "settings": {
+        "h2-en": "SHOP CARD",
+        "h2-ja": "活版ショップカードレイアウト注文",
+        "content": "<p class=\"md-center\">ご希望の活版ショップカードを選択してください。<\/p>"
+      }
+    },
+    "763b3776-eee7-4d2d-a3c2-0938b082a3b6": {
+      "type": "sec-page-btn-with-gray-belt",
+      "settings": {
+        "btn-en": "DATA SUBMISSION",
+        "btn-ja": "データ入稿",
+        "content": "<p class=\"sec-data-submission__text-below-btn center\">データを入稿しての印刷依頼、お見積はこちらから<\/p>"
+      }
     }
   },
   "order": [
     "main",
     "6f4b31b1-b8d2-4b3b-9933-7a62b92ce211",
-    "ac2def89-4f4a-47ca-9f28-cbd5807ec05c"
+    "ac2def89-4f4a-47ca-9f28-cbd5807ec05c",
+    "47b2429d-6cd0-4225-9f46-f45748f3b4f3",
+    "763b3776-eee7-4d2d-a3c2-0938b082a3b6"
   ]
 }
