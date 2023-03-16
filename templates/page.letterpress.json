@@ -23,12 +23,66 @@
         "content": "<p class=\"md-center\">ご希望の活版名刺レイアウトを選択してください。<\/p>"
       }
     },
+    "4675a862-7aa5-42fb-8be3-a46f41be540a": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 12,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "47b2429d-6cd0-4225-9f46-f45748f3b4f3": {
       "type": "sec-page-h2",
       "settings": {
         "h2-en": "SHOP CARD",
         "h2-ja": "活版ショップカードレイアウト注文",
         "content": "<p class=\"md-center\">ご希望の活版ショップカードを選択してください。<\/p>"
+      }
+    },
+    "ad9c6e9f-25aa-4674-b87c-61b1edab1d44": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 12,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "763b3776-eee7-4d2d-a3c2-0938b082a3b6": {
@@ -44,7 +98,9 @@
     "main",
     "ac2def89-4f4a-47ca-9f28-cbd5807ec05c",
     "6f4b31b1-b8d2-4b3b-9933-7a62b92ce211",
+    "4675a862-7aa5-42fb-8be3-a46f41be540a",
     "47b2429d-6cd0-4225-9f46-f45748f3b4f3",
+    "ad9c6e9f-25aa-4674-b87c-61b1edab1d44",
     "763b3776-eee7-4d2d-a3c2-0938b082a3b6"
   ]
 }
