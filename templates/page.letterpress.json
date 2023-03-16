@@ -6,9 +6,27 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "6f4b31b1-b8d2-4b3b-9933-7a62b92ce211": {
+      "type": "sec-page-h2",
+      "settings": {
+        "h2-en": "BUSINESS CARD",
+        "h2-ja": "活版名刺レイアウト注文",
+        "content": "<p class=\"md-center\">ご希望の活版名刺レイアウトを選択してください。<\/p>"
+      }
+    },
+    "ac2def89-4f4a-47ca-9f28-cbd5807ec05c": {
+      "type": "sec-page-btn-with-gray-belt",
+      "settings": {
+        "btn-en": "DATA SUBMISSION",
+        "btn-ja": "データ入稿",
+        "content": "<p class=\"sec-data-submission__text-below-btn center\">データを入稿しての印刷依頼、お見積はこちらから<\/p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "6f4b31b1-b8d2-4b3b-9933-7a62b92ce211",
+    "ac2def89-4f4a-47ca-9f28-cbd5807ec05c"
   ]
 }
