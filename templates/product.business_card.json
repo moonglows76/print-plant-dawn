@@ -19,12 +19,6 @@
             "picker_type": "dropdown"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -36,15 +30,21 @@
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
           }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
         }
       },
       "block_order": [
         "title",
         "description",
         "variant_picker",
-        "buy_buttons",
         "price",
-        "caption"
+        "caption",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
