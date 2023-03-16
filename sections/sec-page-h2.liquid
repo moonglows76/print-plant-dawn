@@ -1,0 +1,38 @@
+<div class="rte">
+  <h2 class="h2">
+    <span class="h2__en">{{ section.settings.h2-en }}</span>
+    <span class="h2__ja">{{ section.settings.h2-ja }}</span>
+  </h2>
+  {{ section.settings.content }}
+</div>
+
+{% schema %}
+  {
+    "name": "見出しレベル2とコンテンツ",
+    "presets": [
+      {
+        "name": "見出しレベル2とコンテンツ"
+      }
+    ],
+    "settings": [
+      {
+        "id": "h2-en",
+        "type": "text",
+        "label": "見出し（英語）",
+        "default": "BUSINESS CARD"
+      },
+      {
+        "id": "h2-ja",
+        "type": "text",
+        "label": "見出し（日本語）",
+        "default": "活版名刺レイアウト注文"
+      },
+      {
+        "id": "content",
+        "type": "html",
+        "label": "コンテンツ",
+        "default": "<p class='md-center'>ご希望の活版名刺レイアウトを選択してください。</p>"
+      }
+    ]
+  }
+{% endschema %}

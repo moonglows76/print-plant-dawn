@@ -1,0 +1,43 @@
+<div class="rte">
+  <div class="sec-data-submission">
+    <a href="/pages/letterpress-submit" class="btn btn-secondary">
+      <span class="btn__en">{{ section.settings.btn-en }}</span>
+      <span class="btn__ja">{{ section.settings.btn-en }}</span>
+      <span class="btn__icon">
+        <svg class="sprite-icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg>
+      </span>
+    </a>
+    {{ section.settings.content }}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "灰色背景とボタン",
+    "presets": [
+      {
+        "name": "灰色背景とボタン"
+      }
+    ],
+    "settings": [
+      {
+        "id": "btn-en",
+        "type": "text",
+        "label": "見出し（英語）",
+        "default": "DATA SUBMISSION"
+      },
+      {
+        "id": "btn-ja",
+        "type": "text",
+        "label": "見出し（日本語）",
+        "default": "データ入稿"
+      },
+      {
+        "id": "content",
+        "type": "html",
+        "label": "コンテンツ",
+        "default": "<p class='sec-data-submission__text-below-btn center'>データを入稿しての印刷依頼、お見積はこちらから</p>"
+      }
+    ]
+  }
+{% endschema %}
