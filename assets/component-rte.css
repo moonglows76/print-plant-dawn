@@ -127,6 +127,14 @@
   padding-right: 0;
 }
 
+@media screen and (max-width: 749px) {
+  .rte .heading-with-gray-box__body > p {
+    margin: 13px 0;
+  }
+  .rte .heading-with-gray-box__body > ul {
+    margin: 13px 0;
+  }
+}
 .rte .heading-with-gray-box__body > p:first-child,
 .rte .heading-with-gray-box__body > ul:first-child {
   margin-top: 0;
