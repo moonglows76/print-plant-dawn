@@ -3522,3 +3522,13 @@ category: layout
   top: 0;
   left: 0;
 }
+
+/* お問い合わせ、データ入稿の入力フォームの上マージン */
+.pxFormGenerator {
+  margin-top: 30px !important;
+}
+@media only screen and (min-width: 750px) {
+  .pxFormGenerator {
+    margin-top: 50px !important;
+  }
+}
