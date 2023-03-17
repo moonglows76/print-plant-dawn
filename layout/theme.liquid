@@ -284,6 +284,14 @@
       <div class="header__btn-cart-outer" data-aos="fade-up" data-aos-delay="1000">
       <a href="{{ routes.cart_url }}" class="header__btn-cart">
         <svg class="icon icon-cart" role="img"><use xlink:href="#cart"></use></svg>
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </div>
+        {%- endif -%}
       </a>
       </div>
       <div class="header__btn-shop-outer" data-aos="fade-up" data-aos-delay="750"><a href="/#sec-top-shopinfo" class="header__btn-shop"><svg class="icon icon-pin" role="img"><use xlink:href="#pin"></use></svg></a></div>
