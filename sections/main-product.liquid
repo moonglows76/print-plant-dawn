@@ -601,18 +601,11 @@
                       <button
                         type="submit"
                         name="add"
-                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                        class="btn btn-primary product-form__submit button--full-width"
                         {% if product.selected_or_first_available_variant.available == false %}
                           disabled
                         {% endif %}
                       >
-                        <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
-                          {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
-                          {%- endif -%}
-                        </span>
                         <div class="loading-overlay__spinner hidden">
                           <svg
                             aria-hidden="true"
@@ -625,6 +618,16 @@
                             <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                           </svg>
                         </div>
+                        <span class="btn__ja">
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            {{ 'products.product.add_to_cart' | t }}
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
+                        </span>
+                        <span class="btn__icon">
+                          <svg class="sprite-icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg>
+                        </span>
                       </button>
                       {%- if block.settings.show_dynamic_checkout -%}
                         {{ form | payment_button }}
