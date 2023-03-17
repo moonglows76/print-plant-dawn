@@ -45,10 +45,10 @@
 
       @font-face {
         font-family: 'silka';
-        src: url('silkamono-regular-webfont.eot');
-        src: url('silkamono-regular-webfont.eot?#iefix') format('embedded-opentype'),
-            url('silkamono-regular-webfont.woff2') format('woff2'),
-            url('silkamono-regular-webfont.ttf') format('truetype');
+        src: url("{{ 'silkamono-regular-webfont.eot' | asset_url }}");
+        src: url("{{ 'silkamono-regular-webfont.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+            url("{{ 'silkamono-regular-webfont.woff2' | asset_url }}") format('woff2'),
+            url("{{ 'silkamono-regular-webfont.ttf' | asset_url }}") format('truetype');
         font-weight: normal;
         font-style: normal;
       }
