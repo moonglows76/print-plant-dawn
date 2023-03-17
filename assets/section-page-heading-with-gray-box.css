@@ -1,0 +1,52 @@
+.rte .sec-page-heading-with-gray-box__container {
+  margin: 40px 0 20px;
+}
+.rte .sec-page-heading-with-gray-box__heading {
+  color: #606060;
+  font-family: var(--font-rubik);
+  font-size: 10px;
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 750px) {
+  .rte .sec-page-heading-with-gray-box__heading {
+    font-size: 12px;
+  }
+}
+.rte .sec-page-heading-with-gray-box__body {
+  background-color: #ececec;
+  margin: 0;
+  padding: 20px 30px;
+  font-size: 11px;
+  font-family: var(--font-sans);
+}
+@media screen and (min-width: 750px) {
+  .rte .sec-page-heading-with-gray-box__body {
+    font-size: 15px;
+  }
+}
+/* @media screen and (min-width: 750px) {
+  .rte .sec-page-heading-with-gray-box__body {
+    padding: 30px 40px;
+  }
+} */
+.rte .sec-page-heading-with-gray-box table {
+  box-shadow: none;
+  table-layout: auto;
+}
+.rte .sec-page-heading-with-gray-box td {
+  border: none;
+  padding: 7px;
+}
+@media screen and (min-width: 750px) {
+  .rte .sec-page-heading-with-gray-box td {
+    padding: 10px;
+  }
+}
+.rte .sec-page-heading-with-gray-box td:first-child {
+  padding-left: 0;
+}
+.rte .sec-page-heading-with-gray-box td:last-child {
+  padding-right: 0;
+}

@@ -1,0 +1,37 @@
+{{ 'section-page-heading-with-gray-box.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width page-width--narrow sec-page-heading-with-gray-box">
+  <div class="rte">
+    <dl class="sec-page-heading-with-gray-box__container">
+      <dt class="sec-page-heading-with-gray-box__heading">{{ section.settings.title }}</dt>
+      <dd class="sec-page-heading-with-gray-box__body">
+        {{ section.settings.content }}
+      </dd>
+    </dl>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "見出しとグレー背景ボックス",
+  "presets": [
+    {
+      "name": "見出しとグレー背景ボックス"
+    }
+  ],
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "見出し",
+      "default": "CHECK POINT"
+    },
+    {
+      "id": "content",
+      "type": "html",
+      "label": "コンテンツ",
+      "default": "<ul><li>1版(色)ごとにレイヤーを分けてください</li><li>色指定はDIC、PANTONE又は画像添付にて、ご指示ください(画像はiPhoneでの確認色となります)</li><li>完成イメージを同封ください</li><li>用紙名、仕上がりサイズ、枚数をご明記ください</li><li>トンボ、塗りたし、アウトライン化をお忘れずにご注意ください</li></ul>"
+    }
+  ]
+}
+{% endschema %}
