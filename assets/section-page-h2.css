@@ -1,0 +1,8 @@
+.sec-page-h2 .rte .sec-page-h2__lead {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 750px) {
+  .sec-page-h2 .rte .sec-page-h2__lead {
+    margin-bottom: 50px;
+  }
+}

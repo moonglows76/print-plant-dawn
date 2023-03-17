@@ -1,10 +1,14 @@
-<div class="page-width page-width--narrow">
+{{ 'section-page-h2.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width page-width--narrow sec-page-h2">
   <div class="rte">
-    <h2 class="h2">
+    <h2 class="h2 sec-page-h2__h2">
       <span class="h2__en">{{ section.settings.h2-en }}</span>
       <span class="h2__ja">{{ section.settings.h2-ja }}</span>
     </h2>
-    {{ section.settings.content }}
+    <div class="sec-page-h2__lead">
+      {{ section.settings.content }}
+    </div>
   </div>
 </div>
 
