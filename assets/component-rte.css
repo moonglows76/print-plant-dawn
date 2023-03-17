@@ -40,10 +40,14 @@
 
 .rte ul {
   padding-left: 2rem;
+  letter-spacing: 0.05em;
+  margin: 25px 0;
+  line-height: 2.24;
 }
 
 .rte li {
   list-style: inherit;
+  margin-bottom: 6px;
 }
 
 .rte li:last-child {
@@ -98,11 +102,11 @@
     font-size: 15px;
   }
 }
-/* @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .rte .heading-with-gray-box__body {
     padding: 30px 40px;
   }
-} */
+}
 .rte .heading-with-gray-box table {
   box-shadow: none;
   table-layout: auto;
@@ -121,4 +125,14 @@
 }
 .rte .heading-with-gray-box td:last-child {
   padding-right: 0;
+}
+
+.rte .heading-with-gray-box__body > p:first-child,
+.rte .heading-with-gray-box__body > ul:first-child {
+  margin-top: 0;
+}
+
+.rte .heading-with-gray-box__body > p:last-child,
+.rte .heading-with-gray-box__body > ul:last-child {
+  margin-bottom: 0;
 }

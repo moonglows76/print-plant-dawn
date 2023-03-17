@@ -50,3 +50,13 @@
 .rte .sec-page-heading-with-gray-box td:last-child {
   padding-right: 0;
 }
+
+.rte .sec-page-heading-with-gray-box > p:first-child,
+.rte .sec-page-heading-with-gray-box > ul:first-child {
+  margin-top: 0;
+}
+
+.rte .sec-page-heading-with-gray-box > p:last-child,
+.rte .sec-page-heading-with-gray-box > ul:last-child {
+  margin-bottom: 0;
+}
