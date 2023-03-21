@@ -16,38 +16,65 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
-    <div class="mv"><img src="https://cdn.shopify.com/s/files/1/0551/2783/4795/files/img_workshop_mv_2048x2048.jpg?v=1677922065" alt="" width="1504" height="631" loading="lazy"></div>
-    <h1 class="h1"><svg class="h1__icon sprite-icon icon-workshop sp-none" role="img"><use xlink:href="#workshop"></use></svg> <span class="h1__en">WORKSHOP</span> <span class="h1__ja">ワークショップ / 教室</span></h1>
-    <p>PRINT+PLANTでは、活版印刷のアナログ性を生かしながらさらなる可能性を独自研究し、新しい印刷手法を”特殊活版”と名付けて開発しています。<br>
-    別の色を足し続けていくことで異なった配色で印刷する「ランダム印刷」や「グラデーション 印刷」を中心に、オンラインでもご注文いただます。</p>
-
-    <h2 class="h2">現在募集中ワークショップ </h2>
-    <h2 class="h2">募集中の教室 </h2>
-    <h2 class="h2">その他のお知らせ </h2>
-
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-      {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
-          {%- render 'article-card',
-            article: article,
-            media_height: section.settings.image_height,
-            media_aspect_ratio: article.image.aspect_ratio,
-            show_image: section.settings.show_image,
-            show_date: section.settings.show_date,
-            show_author: section.settings.show_author,
-            show_excerpt: true 
-          -%}
-        </div>
-      {%- endfor -%}
+  <div class="main-blog page-width page-width--narrow section-{{ section.id }}-padding">
+    <div class="rte">
+      <div class="mv"><img src="https://cdn.shopify.com/s/files/1/0551/2783/4795/files/img_workshop_mv_2048x2048.jpg?v=1677922065" alt="" width="1504" height="631" loading="lazy"></div>
+      <h1 class="h1"><svg class="h1__icon sprite-icon icon-workshop sp-none" role="img"><use xlink:href="#workshop"></use></svg> <span class="h1__en">WORKSHOP</span> <span class="h1__ja">ワークショップ / 教室</span></h1>
+      <p>PRINT+PLANTでは、活版印刷のアナログ性を生かしながらさらなる可能性を独自研究し、新しい印刷手法を”特殊活版”と名付けて開発しています。<br>
+      別の色を足し続けていくことで異なった配色で印刷する「ランダム印刷」や「グラデーション 印刷」を中心に、オンラインでもご注文いただます。</p>
     </div>
 
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+    <div class="blog-category">
+      <div class="blog-category__colors">
+        <span class="blog-category__colors-item is-red"></span>
+        <span class="blog-category__colors-item is-green"></span>
+        <span class="blog-category__colors-item is-yellow"></span>
+        <span class="blog-category__colors-item is-gray"></span>
+      </div>
+      <div class="blog-category__links">
+        TAG : WORKSHOP / EVENT / CLASS / ONLINE
+      </div>
+    </div>
+
+    <h2 class="h2" id="WORKSHOP">現在募集中ワークショップ </h2>
+    <ul class="blog-list">
+      {% comment %} WORKSHOPのブログをループで20記事取得して募集中のものだけ表示 {% endcomment %}
+      {% for article in blogs['WORKSHOP'].articles  limit: 20 %}
+        {% for tag in article.tags %}
+          {% comment %} タグが'wanted'の記事のみ取得する {% endcomment %}
+          {% if tag == 'wanted' %}
+            {%- render 'blog-list-item',
+              article: article,
+              blog_handle: 'WORKSHOP',
+            -%}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+    <h2 class="h2">募集中の教室 </h2>
+    <ul class="blog-list">
+      {% for article in blogs['CLASS'].articles  limit: 20 %}
+        {% for tag in article.tags %}
+          {% comment %} タグが'wanted'の記事のみ取得する {% endcomment %}
+          {% if tag == 'wanted' %}
+            {%- render 'blog-list-item',
+              article: article,
+              blog_handle: 'CLASS',
+            -%}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+    <h2 class="h2">その他のお知らせ </h2>
+    <ul class="blog-list">
+      {% for article in blogs['NEWS'].articles  limit: 20 %}
+        {%- render 'blog-list-item',
+          article: article,
+          blog_handle: 'NEWS',
+        -%}
+      {% endfor %}
+    </ul>
   </div>
-{%- endpaginate -%}
 
 {% schema %}
 {

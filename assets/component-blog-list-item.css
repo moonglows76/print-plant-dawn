@@ -1,0 +1,109 @@
+.blog-list {
+  list-style-type: none;
+  margin: 50px 0 0;
+  padding: 0;
+}
+.blog-list__item {
+  margin-top: 25px;
+}
+.blog-list__link {
+  display: flex;
+  column-gap: 12px;
+}
+.blog-list__img {
+  flex: 0 0 31.25%;
+}
+@media only screen and (min-width: 750px) {
+  .blog-list {
+    margin-top: 60px;
+  }
+  .blog-list__link {
+    column-gap: 5%;
+  }
+  .blog-list__img {
+    flex-basis: 46.8%;
+  }
+}
+.blog-list__img img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center center;
+}
+.blog-list__text {
+  position: relative;
+}
+.blog-list__tags {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  column-gap: 2px;
+}
+.blog-list__tags > span {
+  display: block;
+  background-color: #ffc766;
+  width: 25px;
+  height: 3px;
+}
+@media only screen and (min-width: 750px) {
+  .blog-list__tags {
+    column-gap: 3px;
+  }
+  .blog-list__tags > span {
+    width: 48px;
+    height: 4px;
+  }
+}
+.blog-list__tags .is-workshop {
+  background-color: var(--blog-tag-yellow);
+}
+.blog-list__tags .is-event {
+  background-color: var(--blog-tag-green);
+}
+.blog-list__tags .is-class {
+  background-color: var(--blog-tag-red);
+}
+.blog-list__tags .is-online {
+  background-color: var(--blog-tag-gray);
+}
+
+.blog-list__date {
+  font-size: 10px;
+  font-family: var(--font-rubik);
+  display: block;
+  text-align: right;
+  color: #606060;
+  line-height: 1;
+}
+.blog-list__title {
+  font-size: 12px;
+  font-family: var(--font-sans);
+  margin: 5px 0 0;
+  color: #000;
+  letter-spacing: 0.14em;
+}
+.blog-list__content {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 300;
+  font-family: var(--font-sans);
+  color: #606060;
+  line-height: 1.57;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+  letter-spacing: 0.16em;
+}
+@media only screen and (min-width: 750px) {
+  .blog-list__title {
+    font-size: 17px;
+    margin-top: 30px;
+  }
+  .blog-list__content {
+    margin-top: 20px;
+    font-size: 14px;
+    -webkit-line-clamp: 6;
+    line-height: 1.75;
+  }
+}

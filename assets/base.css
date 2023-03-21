@@ -3533,3 +3533,58 @@ category: layout
     margin-top: 50px !important;
   }
 }
+
+.blog-category {
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+.blog-category__colors {
+  display: flex;
+  column-gap: 3px;
+}
+.blog-category__colors-item {
+  flex: 1 1 25%;
+}
+.blog-category__colors-item::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+}
+@media only screen and (min-width: 750px) {
+  .blog-category {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  .blog-category__colors {
+    column-gap: 6px;
+  }
+  .blog-category__colors-item::after {
+    height: 8px;
+  }
+}
+.blog-category__colors-item.is-yellow {
+  background-color: var(--blog-tag-yellow);
+}
+.blog-category__colors-item.is-green {
+  background-color: var(--blog-tag-green);
+}
+.blog-category__colors-item.is-red {
+  background-color: var(--blog-tag-red);
+}
+.blog-category__colors-item.is-gray {
+  background-color: var(--blog-tag-gray);
+}
+.blog-category__links {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #606060;
+  font-family: var(--font-sans);
+  letter-spacing: 0.18em;
+}
+@media only screen and (min-width: 750px) {
+  .blog-category__links {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}

@@ -39,7 +39,7 @@
     %}
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@300;400&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP:wght@300;400&family=Rubik:wght@300&display=swap" rel="stylesheet">
   
     {% style %}
 
@@ -54,6 +54,12 @@
       }
 
       :root {
+        /* blog tags */
+        --blog-tag-red: #ff2600;
+        --blog-tag-green: #49bf7e;
+        --blog-tag-yellow: #ffc766;
+        --blog-tag-gray: #9d9d9d;
+
         /*
         font
         --font-serif: 'Noto Serif JP', serif;  light:300  regular:400
@@ -324,7 +330,7 @@
         </a></li>
         <li><a href="/blogs/workshop">
           <span lang="en">WORKSHOP</span>
-          <span lang="ja">ワークショップ</span>
+          <span lang="ja">ワークショップ<span class="separator">/</span>教室</span>
         </a></li>
         <li><a href="/collections/all">
           <span lang="en">ONLINE SHOP</span>

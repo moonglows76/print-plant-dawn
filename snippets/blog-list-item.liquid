@@ -1,0 +1,42 @@
+{{ 'component-blog-list-item.css' | asset_url | stylesheet_tag }}
+
+<li class="blog-list__item is-{{ blog_handle }}">
+  <a href="{{ article.url }}" class="blog-list__link">
+    <div class="blog-list__img">
+      {% if article.image != blank %}
+        {% comment %} サムネイル画像が登録されていたらサムネイルを表示 {% endcomment %}
+        <img src="{{ article.image.src | image_url: width: 600 }}" width="600" height="600" alt="" loading="lazy">
+      {% else %}
+        {% comment %} サムネイル画像が登録されていなかったらasset内に格納した'default.jpg'を表示 {% endcomment %}
+        <img src="{{ 'img_blog_default.png' | asset_img_url: 'original' }}" width="600" height="600" alt="" loading="lazy">
+      {% endif %}
+    </div>
+    <div class="blog-list__text">
+      <div class="blog-list__tags">
+        {% if article.tags contains 'workshop' or blog_handle == 'WORKSHOP' %}
+          <span class="blog-list__tag is-workshop"></span>
+        {% endif %}
+        {% if article.tags contains 'event' %}
+          <span class="blog-list__tag is-event"></span>
+        {% endif %}
+        {% if article.tags contains 'class' or blog_handle == 'CLASS' %}
+          <span class="blog-list__tag is-class"></span>
+        {% endif %}
+        {% if article.tags contains 'online' or blog_handle == 'NEWS' %}
+          <span class="blog-list__tag is-online"></span>
+        {% endif %}
+      </div>
+      <div class="blog-list__date">
+        {% comment %} ブログの更新日を表示 {% endcomment %}
+        <time datetime="{{ article.updated_at | date: '%Y-%m-%d' }}">{{ article.updated_at | date: '%y-%m-%d' }}</time>
+      </div>
+      <p class="blog-list__title">
+        {% comment %} ブログのタイトルを表示 {% endcomment %}
+        {{ article.title }}
+      </p>
+      <div class="blog-list__content">
+        {{ article.content | strip_html | truncate: 80 }}
+      </div>
+    </div>
+  </a>
+</li>
