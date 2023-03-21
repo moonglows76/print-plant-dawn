@@ -28,7 +28,7 @@
       </div>
       <div class="blog-list__date">
         {% comment %} ブログの更新日を表示 {% endcomment %}
-        <time datetime="{{ article.updated_at | date: '%Y-%m-%d' }}">{{ article.updated_at | date: '%y-%m-%d' }}</time>
+        <time datetime="{{ article.updated_at | date: '%Y-%m-%d' }}">{{ article.updated_at | date: '%Y-%m-%d' }}</time>
       </div>
       <p class="blog-list__title">
         {% comment %} ブログのタイトルを表示 {% endcomment %}
