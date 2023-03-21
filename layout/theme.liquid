@@ -289,7 +289,7 @@
       {% endif %}
       <div class="header__btn-cart-outer" data-aos="fade-up" data-aos-delay="1000">
       <a href="{{ routes.cart_url }}" class="header__btn-cart">
-        <svg class="icon icon-cart" role="img"><use xlink:href="#cart"></use></svg>
+        <svg class="icon icon-cart" role="img"><use xlink:href="#usercart"></use></svg>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
