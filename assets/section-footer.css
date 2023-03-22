@@ -439,6 +439,10 @@ category: component
   .footer__privacy {
     -webkit-order: 1;
             order: 1;
+    margin-left: 30px;
+  }
+  .footer__privacy:first-child {
+    margin-left: auto;
   }
 }
 

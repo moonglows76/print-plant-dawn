@@ -3613,3 +3613,14 @@ category: layout
     margin-top: 30px;
   }
 }
+
+/* policy page */
+.shopify-policy__title {
+  margin: 70px 0 0;
+}
+@media screen and (min-width: 750px) {
+  .shopify-policy__title {
+    margin-top: 140px;
+    margin-bottom: 54px;
+  }
+}
