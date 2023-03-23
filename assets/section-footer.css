@@ -42,8 +42,7 @@ category: component
     margin: 0;
     padding: 0;
     padding-top: 27px;
-    /* margin-left: -27px;
-    margin-right: -27px; */
+    padding-bottom: 95px;
   }
 }
 @media screen and (min-width: 968px) {
@@ -52,6 +51,7 @@ category: component
     list-style: none;
     padding-left: 0;
     padding-top: 92px;
+    padding-bottom: 135px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -149,6 +149,29 @@ category: component
 ---
 
 */
+
+#insta-feed h2 {
+  font-family: "silka", sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 46px;
+  text-align: center;
+  letter-spacing: 0.22em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 35px;
+}
+@media screen and (min-width: 968px) {
+  #insta-feed h2 {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 80px;
+  }
+}
+
+
 .instagram-list {
   padding-top: 95px;
   padding-bottom: 122px;
