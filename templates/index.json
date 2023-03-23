@@ -269,6 +269,25 @@
       "type": "sec-top-shopinfo-3",
       "settings": {
       }
+    },
+    "1679543363d899945e": {
+      "type": "apps",
+      "blocks": {
+        "99807d19-79d3-4ba3-a841-6bef8f7bb599": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "99807d19-79d3-4ba3-a841-6bef8f7bb599"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -280,6 +299,7 @@
     "a143eef7-1761-481d-b8d1-406fad0ca015",
     "09de5f0a-e335-4a6e-98e4-7c6d465319d0",
     "a468d78d-a087-4ce0-aca8-b1e56151a6df",
-    "00aa0cfd-d7a4-49b5-9c5c-3f7e9aef31dc"
+    "00aa0cfd-d7a4-49b5-9c5c-3f7e9aef31dc",
+    "1679543363d899945e"
   ]
 }
