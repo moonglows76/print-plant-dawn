@@ -54,16 +54,16 @@
     height: 4px;
   }
 }
-.blog-list__tags .is-workshop {
-  background-color: var(--blog-tag-yellow);
-}
-.blog-list__tags .is-event {
-  background-color: var(--blog-tag-green);
-}
-.blog-list__tags .is-class {
+.blog-list__tags .is-red {
   background-color: var(--blog-tag-red);
 }
-.blog-list__tags .is-online {
+.blog-list__tags .is-green {
+  background-color: var(--blog-tag-green);
+}
+.blog-list__tags .is-yellow {
+  background-color: var(--blog-tag-yellow);
+}
+.blog-list__tags .is-gray {
   background-color: var(--blog-tag-gray);
 }
 

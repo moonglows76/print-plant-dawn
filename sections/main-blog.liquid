@@ -32,46 +32,42 @@
         <span class="blog-category__colors-item is-gray"></span>
       </div>
       <div class="blog-category__links">
-        TAG : WORKSHOP / EVENT / CLASS / ONLINE
+        TAG : WORKSHOP / EVENT / CLASS / NEWS
       </div>
     </div>
 
     <h2 class="h2" id="WORKSHOP">現在募集中ワークショップ </h2>
     <ul class="blog-list">
       {% comment %} WORKSHOPのブログをループで20記事取得して募集中のものだけ表示 {% endcomment %}
-      {% for article in blogs['WORKSHOP'].articles  limit: 20 %}
-        {% for tag in article.tags %}
-          {% comment %} タグが'wanted'の記事のみ取得する {% endcomment %}
-          {% if tag == 'wanted' %}
-            {%- render 'blog-list-item',
-              article: article,
-              blog_handle: 'WORKSHOP',
-            -%}
-          {% endif %}
-        {% endfor %}
+      {% for article in blogs['WORKSHOP'].articles limit: 50 %}
+        {% if article.tags contains 'wanted' and article.tags contains 'workshop' %}
+          {%- render 'blog-list-item',
+            article: article,
+            blog_handle: 'WORKSHOP',
+          -%}
+        {% endif %}
       {% endfor %}
     </ul>
     <h2 class="h2">募集中の教室 </h2>
     <ul class="blog-list">
-      {% for article in blogs['CLASS'].articles  limit: 20 %}
-        {% for tag in article.tags %}
-          {% comment %} タグが'wanted'の記事のみ取得する {% endcomment %}
-          {% if tag == 'wanted' %}
-            {%- render 'blog-list-item',
-              article: article,
-              blog_handle: 'CLASS',
-            -%}
-          {% endif %}
-        {% endfor %}
+      {% for article in blogs['WORKSHOP'].articles  limit: 50 %}
+        {% if article.tags contains 'wanted' and article.tags contains 'class' %}
+          {%- render 'blog-list-item',
+            article: article,
+            blog_handle: 'CLASS',
+          -%}
+        {% endif %}
       {% endfor %}
     </ul>
     <h2 class="h2">その他のお知らせ </h2>
     <ul class="blog-list">
-      {% for article in blogs['NEWS'].articles  limit: 20 %}
-        {%- render 'blog-list-item',
-          article: article,
-          blog_handle: 'NEWS',
-        -%}
+      {% for article in blogs['WORKSHOP'].articles  limit: 50 %}
+        {% if article.tags contains 'news' %}
+          {%- render 'blog-list-item',
+            article: article,
+            blog_handle: 'NEWS',
+          -%}
+        {% endif %}
       {% endfor %}
     </ul>
   </div>

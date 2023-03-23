@@ -13,17 +13,17 @@
     </div>
     <div class="blog-list__text">
       <div class="blog-list__tags">
-        {% if article.tags contains 'workshop' or blog_handle == 'WORKSHOP' %}
-          <span class="blog-list__tag is-workshop"></span>
+        {% if article.tags contains 'workshop' %}
+          <span class="blog-list__tag is-red"></span>
         {% endif %}
         {% if article.tags contains 'event' %}
-          <span class="blog-list__tag is-event"></span>
+          <span class="blog-list__tag is-green"></span>
         {% endif %}
-        {% if article.tags contains 'class' or blog_handle == 'CLASS' %}
-          <span class="blog-list__tag is-class"></span>
+        {% if article.tags contains 'class' %}
+          <span class="blog-list__tag is-yellow"></span>
         {% endif %}
-        {% if article.tags contains 'online' or blog_handle == 'NEWS' %}
-          <span class="blog-list__tag is-online"></span>
+        {% if article.tags contains 'news' %}
+          <span class="blog-list__tag is-gray"></span>
         {% endif %}
       </div>
       <div class="blog-list__date">
