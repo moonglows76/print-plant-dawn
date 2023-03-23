@@ -150,6 +150,9 @@ category: component
 
 */
 
+#insta-feed {
+  text-align: left;
+}
 #insta-feed h2 {
   font-family: "silka", sans-serif;
   font-size: 15px;
