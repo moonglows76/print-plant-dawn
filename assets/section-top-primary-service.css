@@ -123,5 +123,6 @@ category: top
   .sec-top-primary-service .slick-slide {
     padding-left: 8.5px;
     padding-right: 8.5px;
+    max-width: 1144px;
   }
 }

@@ -55,6 +55,7 @@ $(function () {
       settings: {
         centerMode: true,
         centerPadding: '9.5%',
+        variableWidth: true,
       }
     }, {
       breakpoint: 968,
@@ -78,6 +79,7 @@ $(function () {
       settings: {
         centerMode: true,
         centerPadding: '9.5%',
+        variableWidth: true,
       }
     }, {
       breakpoint: 968,
