@@ -36,13 +36,35 @@
           <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
             <div class="blog-category is-article">
               <div class="blog-category__colors">
-                <span class="blog-category__colors-item is-red"></span>
-                <span class="blog-category__colors-item is-green"></span>
-                <span class="blog-category__colors-item is-yellow"></span>
-                <span class="blog-category__colors-item is-gray"></span>
+                {% if article.tags contains 'workshop' %}
+                  <span class="blog-category__colors-item is-red"></span>
+                {% endif %}
+                {% if article.tags contains 'event' %}
+                  <span class="blog-category__colors-item is-green"></span>
+                {% endif %}
+                {% if article.tags contains 'class' %}
+                  <span class="blog-category__colors-item is-yellow"></span>
+                {% endif %}
+                {% if article.tags contains 'news' %}
+                  <span class="blog-category__colors-item is-gray"></span>
+                {% endif %}
               </div>
               <div class="blog-category__links">
-                TAG : WORKSHOP / EVENT / CLASS / NEWS
+                TAG : 
+                <span class="blog-category__links-wrapper">
+                  {% if article.tags contains 'workshop' %}
+                    <span class="blog-category__links-item">WORKSHOP</span>
+                  {% endif %}
+                  {% if article.tags contains 'event' %}
+                    <span class="blog-category__links-item">EVENT</span>
+                  {% endif %}
+                  {% if article.tags contains 'class' %}
+                    <span class="blog-category__links-item">CLASS</span>
+                  {% endif %}
+                  {% if article.tags contains 'news' %}
+                    <span class="blog-category__links-item">NEWS</span>
+                  {% endif %}
+                </span>
               </div>
             </div>
             {%- if block.settings.blog_show_date -%}

@@ -3564,7 +3564,7 @@ category: layout
   column-gap: 3px;
 }
 .blog-category__colors-item {
-  flex: 1 1 25%;
+  flex: 0 0 calc((100% - 6px * 3) / 4);
 }
 .blog-category__colors-item::after {
   content: '';
@@ -3612,6 +3612,15 @@ category: layout
     font-size: 12px;
     margin-top: 30px;
   }
+}
+.blog-category__links-wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.blog-category__links-item:nth-child(n+2)::before {
+  content: '/';
+  display: inline-block;
+  margin: 0 6px;
 }
 
 /* policy page */
