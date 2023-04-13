@@ -1,7 +1,7 @@
 <div class="page-width page-width--narrow">
   <div class="rte">
     <div class="sec-data-submission">
-      <a href="/pages/letterpress-submit" class="btn btn-secondary">
+      <a href="{{ section.settings.button_link }}" class="btn btn-secondary">
         <span class="btn__en">{{ section.settings.btn-en }}</span>
         <span class="btn__ja">{{ section.settings.btn-ja }}</span>
         <span class="btn__icon">
@@ -33,6 +33,12 @@
         "type": "text",
         "label": "見出し（日本語）",
         "default": "データ入稿"
+      },
+      {
+        "id": "button_link",
+        "type": "url",
+        "label": "リンク先",
+        "default": "/collections"
       },
       {
         "id": "content",
