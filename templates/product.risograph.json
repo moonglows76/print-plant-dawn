@@ -66,17 +66,9 @@
         "padding_bottom": 76
       }
     },
-    "ee258349-7d1b-44b0-accc-d5569d01ebcd": {
-      "type": "sec-page-btn-with-gray-belt",
-      "settings": {
-        "btn-en": "DATA SUBMISSION",
-        "btn-ja": "データ入稿",
-        "button_link": "shopify:\/\/products\/活版名刺-データ入稿",
-        "content": "<p class=\"sec-data-submission__text-below-btn center\">データを入稿しての印刷依頼、お見積はこちらから<\/p>"
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -95,7 +87,6 @@
   },
   "order": [
     "main",
-    "ee258349-7d1b-44b0-accc-d5569d01ebcd",
     "product-recommendations"
   ]
 }
