@@ -203,6 +203,7 @@
         },
         "7fc0977e-3fb3-45f6-b1dd-109bdfdf162f": {
           "type": "menu",
+          "disabled": true,
           "settings": {
             "menu-name-en": "COFFEE \/ MILK",
             "menu-name-ja": "カフェオレ (H\/C)",
@@ -222,19 +223,20 @@
           "settings": {
             "menu-name-en": "PERRIER",
             "menu-name-ja": "ペリエ (C)",
-            "menu-price": "¥500"
+            "menu-price": "¥300"
           }
         },
         "8a290c07-14fb-4e41-a6dc-835e03727ad6": {
           "type": "menu",
           "settings": {
-            "menu-name-en": "CHINESE BLOOMING TEA",
-            "menu-name-ja": "工芸茶A (H)",
-            "menu-price": "¥600"
+            "menu-name-en": "APPLE JUICE",
+            "menu-name-ja": "リンゴジュース",
+            "menu-price": "¥300"
           }
         },
         "3616bcbd-b732-485e-beeb-8b4947b26a6b": {
           "type": "menu",
+          "disabled": true,
           "settings": {
             "menu-name-en": "CHINESE BLOOMING TEA",
             "menu-name-ja": "工芸茶B (H)",
@@ -243,6 +245,7 @@
         },
         "c6bf47f9-c18a-4572-8b60-e0b11da0127c": {
           "type": "menu",
+          "disabled": true,
           "settings": {
             "menu-name-en": "CHINESE BLOOMING TEA",
             "menu-name-ja": "工芸茶C (H)",
