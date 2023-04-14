@@ -189,7 +189,7 @@
           "type": "menu",
           "settings": {
             "menu-name-en": "COFFEE \/ MILK",
-            "menu-name-ja": "ミルクコーヒー (H\/C)",
+            "menu-name-ja": "カフェオレ (H\/C)",
             "menu-price": "¥500"
           }
         },
@@ -197,7 +197,7 @@
           "type": "menu",
           "settings": {
             "menu-name-en": "DECAF COFFEE",
-            "menu-name-ja": "カフェインレス コーヒー (H\/C)",
+            "menu-name-ja": "デカフェ コーヒー (H\/C)",
             "menu-price": "¥500"
           }
         },
