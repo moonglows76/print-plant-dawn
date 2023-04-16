@@ -10,7 +10,10 @@
   <div class="sec-top-shopinfo__body--top">
     <div class="sec-top-shopinfo__slider-wrapper">
       <div class="sec-top-shopinfo__slider">
-        <div class="sec-top-shopinfo__slider-item"><div class="iframe-wrapper"><div id="player"></div></div></div>
+        {% comment %} <div class="sec-top-shopinfo__slider-item"><div class="iframe-wrapper"><div id="player"></div></div></div> {% endcomment %}
+        <div class="sec-top-shopinfo__slider-item">
+          {{ block.settings.video| video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+        </div>
         {% for block in section.blocks %}  
         <div class="sec-top-shopinfo__slider-item"><img src="{{ block.settings.slideshow-image | img_url: 'master' }}" alt="" width="1388" height="741" loading="lazy"></div>
         {% endfor %}
@@ -34,6 +37,13 @@
 {% schema %}
   {
     "name": "ショップ情報上部",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "動画ファイル"
+      }
+    ],
     "blocks":[
       {
         "type": "slide",

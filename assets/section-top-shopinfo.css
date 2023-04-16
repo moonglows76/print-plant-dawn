@@ -79,6 +79,9 @@ category: top
             transform: translateX(-50%);
   }
 }
+.sec-top-shopinfo__slider video {
+  max-width: 100%;
+}
 .sec-top-shopinfo__catch h3 {
   text-align: center;
   margin-top: 50px;
