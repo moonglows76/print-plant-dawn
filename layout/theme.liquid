@@ -403,7 +403,21 @@
     <script src="{{ 'libs.js' | asset_url }}" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer="defer"></script>
     <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
-    <script>
+    <script defer="defer">
+      var resultDetectSpPcForMap = '';
+
+      // SP/PC判定
+      var detectSpPcForMap = function () {
+        var detectBlock = document.querySelector('.footer__sitemap');
+        var style = window.getComputedStyle(detectBlock);
+        if ( style.display != "grid" ){
+          return "SP";
+        } else {
+          return "PC";
+        }
+      };
+      resultDetectSpPcForMap = detectSpPcForMap();
+
       // 地図表示
       let map;
       function initMap() {
@@ -428,7 +442,7 @@
         // マーカー
         var markerW = 34,
             markerH = 45;
-        if(resultDetectSpPc === 'PC') {
+        if(resultDetectSpPcForMap === 'PC') {
           markerW = 68,
           markerH = 89;
         }
