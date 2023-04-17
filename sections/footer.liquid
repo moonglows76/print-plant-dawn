@@ -43,6 +43,33 @@
     <div class="page-width page-width-desktop">
       <ul class="function-list__list">
         <li class="function-list__item">
+          <a href="/pages/letterpress" class="function-list__link">
+            <span class="function-list__img"><img src="{{section.settings.image-letterpress | img_url: 'master'}}" alt="" width="556" height="281" loading="lazy"></span>
+            <span class="function-list__text">
+              <span lang="en">LETTERPRESS</span>
+              <span lang="ja">活版印刷</span>
+            </span>
+          </a>
+        </li>
+        <li class="function-list__item">
+          <a href="/pages/special-letterpress" class="function-list__link">
+            <span class="function-list__img"><img src="{{section.settings.image-special-letterpress | img_url: 'master'}}" alt="" width="556" height="281" loading="lazy"></span>
+            <span class="function-list__text">
+              <span lang="en">SPECIAL LETTERPRESS</span>
+              <span lang="ja">特殊活版</span>
+            </span>
+          </a>
+        </li>
+        <li class="function-list__item">
+          <a href="/pages/risograph" class="function-list__link">
+            <span class="function-list__img"><img src="{{section.settings.image-risograph | img_url: 'master'}}" alt="" width="556" height="281" loading="lazy"></span>
+            <span class="function-list__text">
+              <span lang="en">RISOGRAPH</span>
+              <span lang="ja">リソグラフ印刷</span>
+            </span>
+          </a>
+        </li>
+        <li class="function-list__item">
           <a href="/collections/all" class="function-list__link">
             <span class="function-list__img"><img src="{{section.settings.image-shop | img_url: 'master'}}" alt="" width="556" height="281" loading="lazy"></span>
             <span class="function-list__text">
@@ -61,7 +88,7 @@
           </a>
         </li>
         <li class="function-list__item">
-          <a href="http://plants-trade.com/" target="_blank" class="function-list__link">
+          <a href="https://www.instagram.com/plantstrade_official/" target="_blank" class="function-list__link">
             <span class="function-list__img"><img src="{{section.settings.image-plants | img_url: 'master'}}" alt="" width="556" height="281" loading="lazy"></span>
             <span class="function-list__text">
               <span lang="en">PLANTS</span>
@@ -301,6 +328,21 @@
     }
   ],
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image-letterpress",
+      "label": "活版印刷画像"
+    },
+    {
+      "type": "image_picker",
+      "id": "image-special-letterpress",
+      "label": "特殊活版画像"
+    },
+    {
+      "type": "image_picker",
+      "id": "image-risograph",
+      "label": "リソグラフ印刷画像"
+    },
     {
       "type": "image_picker",
       "id": "image-shop",
