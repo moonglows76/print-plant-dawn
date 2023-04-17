@@ -91,7 +91,7 @@
       "settings": {
         "btn-en": "DATA SUBMISSION",
         "btn-ja": "データ入稿",
-        "button_link": "shopify:\/\/products\/活版名刺-データ入稿",
+        "button_link": "shopify:\/\/pages\/letterpress-submit",
         "content": "<p class=\"sec-data-submission__text-below-btn center\">データを入稿しての印刷依頼、お見積はこちらから<\/p>"
       }
     }
