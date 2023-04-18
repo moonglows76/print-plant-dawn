@@ -37,12 +37,22 @@ category: component
 ---
 
 */
+.function-list.is-outer-links {
+  background-color: #dfdfdf;
+}
+.function-list.is-outer-links .function-list__text {
+  background-color: #fff;
+}
 @media screen and (max-width: 967px) {
   .function-list__list {
     margin: 0;
     padding: 0;
     padding-top: 27px;
     padding-bottom: 95px;
+  }
+  .function-list.is-outer-links .function-list__list {
+    padding-top: 27px;
+    padding-bottom: 27px;
   }
 }
 @media screen and (min-width: 968px) {
@@ -57,6 +67,10 @@ category: component
     grid-template-rows: auto;
     grid-gap: 42px 15px;
     gap: 42px 15px;
+  }
+  .function-list.is-outer-links .function-list__list {
+    padding-top: 92px;
+    padding-bottom: 92px;
   }
 }
 @media screen and (max-width: 967px) {
