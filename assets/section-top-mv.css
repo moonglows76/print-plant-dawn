@@ -157,6 +157,12 @@ category: top
     padding-bottom: 22px;
   }
 }
+.sec-top-mv video {
+  width: 100%;
+  height: 100svh;
+  object-fit: cover;
+  object-position: center center;
+}
 .sec-top-mv__slider img {
   width: 100%;
   height: 100vh;

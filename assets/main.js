@@ -28,19 +28,19 @@ $(function () {
   $secTopShopinfo__menuDetail = $('.sec-top-shopinfo__menu-detail'),
   $btnPagetop = $('.btn-pagetop');
 
-  $('.sec-top-mv__slider').slick({
-    infinite: true,
-    dots: true,
-    arrows: true,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
-    speed: 500,
-    pauseOnHover: false,
-    nextArrow: '<button type="button" class="slick-next"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
-    prevArrow: '<button type="button" class="slick-prev"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
-    appendArrows: '.sec-top-mv__slider-arrows-dots',
-    appendDots: '.sec-top-mv__slider-arrows-dots',
-  });
+  // $('.sec-top-mv__slider').slick({
+  //   infinite: true,
+  //   dots: true,
+  //   arrows: true,
+  //   // autoplay: true,
+  //   // autoplaySpeed: 5000,
+  //   speed: 500,
+  //   pauseOnHover: false,
+  //   nextArrow: '<button type="button" class="slick-next"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
+  //   prevArrow: '<button type="button" class="slick-prev"><svg class="icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg></button>',
+  //   appendArrows: '.sec-top-mv__slider-arrows-dots',
+  //   appendDots: '.sec-top-mv__slider-arrows-dots',
+  // });
 
   $('.sec-top-primary-service__slider--letterpress').slick({
     infinite: true,
