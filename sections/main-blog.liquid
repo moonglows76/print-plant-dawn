@@ -44,7 +44,7 @@
         for article in blogs['WORKSHOP'].articles limit: 50
           if article.tags contains 'wanted' and article.tags contains 'workshop'
             assign workshop_count = workshop_count | plus: 1
-            render 'blog-list-item', article: article, blog_handle: 'WORKSHOP',
+            render 'blog-list-item', article: article, blog_handle: 'WORKSHOP'
           endif
         endfor
       %}
@@ -63,7 +63,7 @@
         for article in blogs['WORKSHOP'].articles  limit: 50
           if article.tags contains 'wanted' and article.tags contains 'class'
             assign class_count = class_count | plus: 1
-            render 'blog-list-item', article: article, blog_handle: 'CLASS',
+            render 'blog-list-item', article: article, blog_handle: 'CLASS'
           endif
         endfor
       %}
@@ -82,7 +82,7 @@
         for article in blogs['WORKSHOP'].articles  limit: 50
         if article.tags contains 'news'
           assign news_count = news_count | plus: 1
-          render 'blog-list-item', article: article, blog_handle: 'NEWS',
+          render 'blog-list-item', article: article, blog_handle: 'NEWS'
           endif
         endfor
       %}
