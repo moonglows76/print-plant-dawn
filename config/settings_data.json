@@ -172,10 +172,13 @@
           "d2ef8368-d51c-4bed-ba10-a7dc6b1d6c3f"
         ],
         "settings": {
-          "image-shop": "shopify:\/\/shop_images\/img_onlineshop_aef9b188-379e-4914-b29a-90e4a2cc7ec8.png",
-          "image-workshop": "shopify:\/\/shop_images\/img_workshop_8cde940b-7807-4afa-8bbb-c826a1ebab89.png",
-          "image-plants": "shopify:\/\/shop_images\/img_plants_4da59f6a-f60d-4987-a34d-7bc764ea63de.png",
-          "image-design": "shopify:\/\/shop_images\/img_design_3373bed1-011c-4789-bebb-4835ac812638.png",
+          "image-letterpress": "shopify:\/\/shop_images\/img_letterpress.png",
+          "image-special-letterpress": "shopify:\/\/shop_images\/img_special_letterpress.png",
+          "image-risograph": "shopify:\/\/shop_images\/img_risograph.png",
+          "image-shop": "shopify:\/\/shop_images\/img_onlineshop_e309b693-99d8-4154-b8b8-f8744e141122.png",
+          "image-workshop": "shopify:\/\/shop_images\/img_workshop_603a4010-8520-491e-8f26-26b66ef21899.png",
+          "image-plants": "shopify:\/\/shop_images\/img_plants_13ad93b2-ccf3-48e3-b488-61303d6487c9.png",
+          "image-design": "shopify:\/\/shop_images\/img_design_183d8749-068d-4fe5-8a1b-c05cd9af92fe.png",
           "image-instagram-1": "shopify:\/\/shop_images\/img_instagram_01.jpg",
           "image-instagram-2": "shopify:\/\/shop_images\/img_instagram_02.jpg",
           "image-instagram-3": "shopify:\/\/shop_images\/img_instagram_03.jpg",
