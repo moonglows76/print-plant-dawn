@@ -147,7 +147,7 @@ category: component
 .function-list__text [lang=ja] {
   font-size: 13px;
   line-height: 1.1538461538;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
 }
 @media screen and (min-width: 968px) {
   .function-list__text [lang=ja] {
