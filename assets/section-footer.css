@@ -57,11 +57,12 @@ category: component
 }
 @media screen and (min-width: 968px) {
   .function-list__list {
+    margin-top: 0;
     margin-bottom: 0;
     list-style: none;
     padding-left: 0;
     padding-top: 92px;
-    padding-bottom: 135px;
+    padding-bottom: 110px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
