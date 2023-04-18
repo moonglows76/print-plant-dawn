@@ -2,9 +2,12 @@
 
 <div class="sec-top-mv">
   <div class="sec-top-mv__slider">
-    {% for block in section.blocks %}  
+    <div class="sec-top-shopinfo__slider-item">
+      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+    </div>
+    {% comment %} {% for block in section.blocks %}  
     <div class="sec-top-mv__slider-item"><img src="{{ block.settings.slideshow-image | img_url: 'master' }}" alt="" width="3006" height="1796" loading="lazy"></div>
-    {% endfor %}
+    {% endfor %} {% endcomment %}
   </div>
   <div class="sec-top-mv__slider-arrows-dots slider-arrows-dots"></div>
   <div class="sec-top-mv__shop-company" data-aos="fade-up" data-aos-delay="250">
@@ -25,6 +28,11 @@
 {
   "name": "メインビジュアル",
   "settings": [
+    {
+      "type": "video",
+      "id": "video",
+      "label": "動画ファイル"
+    },
     {
       "id": "title",
       "type": "html",

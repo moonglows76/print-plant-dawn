@@ -10,10 +10,6 @@
   <div class="sec-top-shopinfo__body--top">
     <div class="sec-top-shopinfo__slider-wrapper">
       <div class="sec-top-shopinfo__slider">
-        {% comment %} <div class="sec-top-shopinfo__slider-item"><div class="iframe-wrapper"><div id="player"></div></div></div> {% endcomment %}
-        <div class="sec-top-shopinfo__slider-item">
-          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
-        </div>
         {% for block in section.blocks %}  
         <div class="sec-top-shopinfo__slider-item"><img src="{{ block.settings.slideshow-image | img_url: 'master' }}" alt="" width="1388" height="741" loading="lazy"></div>
         {% endfor %}
