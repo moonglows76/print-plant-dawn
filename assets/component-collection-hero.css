@@ -38,11 +38,14 @@
 
 .collection-hero__title {
   margin: 70px 0 0;
+  font-family: Rubik,sans-serif;
+  font-size: 19px;
 }
 @media screen and (min-width: 750px) {
   .collection-hero__title {
     margin-top: 140px;
     margin-bottom: 54px;
+    font-size: 25px;
   }
 }
 

@@ -3255,9 +3255,8 @@ category: layout
   margin-bottom: 0;
   border: none;
   box-shadow: none;
-  height: calc(100svh - 38px);
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
+  width: 100%;
 }
 @media screen and (min-width: 750px) {
   .mv {

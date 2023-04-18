@@ -108,17 +108,11 @@
 }
 @media screen and (min-width: 750px) {
   .article-template__content div:has(img) {
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center !important;
     margin-top: 55px;
     margin-bottom: 55px;
   }
   .article-template__content div:has(img) > img:only-child {
-    max-width: 1192px;
-    width: 80%;
+    width: 100%;
   }
 }
 /* 
