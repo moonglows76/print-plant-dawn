@@ -26,13 +26,13 @@
         "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-1": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_businesscard_01.jpg"
+            "slideshow-image": "shopify:\/\/shop_images\/pp_top_lp_slide2_3e8eaa29-e100-420d-9cae-55390d720c2d.jpg"
           }
         },
         "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-2": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_businesscard_01.jpg"
+            "slideshow-image": "shopify:\/\/shop_images\/pp_top_lp_slide3.jpg"
           }
         }
       },
@@ -44,7 +44,7 @@
       "settings": {
         "section-name": "letterpress",
         "title": "活版印刷",
-        "description": "<p>活版多色刷りや単色刷り、ご希望の用紙や箔押し加工など柔軟にご相談ください。<br>\n活版名刺に最適なレイアウトデザインと用紙の組合せもご用意しております。<\/p>",
+        "description": "<p>多色刷りや単色刷り、ご希望用紙や箔押し、抜き加工など柔軟にご相談ください。<br>\n入稿以外にも活版名刺に最適なレイアウトデザインと用紙の組合せもご用意しております。<\/p>",
         "link": "shopify:\/\/pages\/letterpress",
         "linktext-en": "LETTERPRESS",
         "linktext-ja": "活版印刷"
@@ -62,13 +62,13 @@
         "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-1": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_top-special-letterpress.jpg"
+            "slideshow-image": "shopify:\/\/shop_images\/pp_top_slp_slide2.jpg"
           }
         },
         "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-2": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_top-special-letterpress.jpg"
+            "slideshow-image": "shopify:\/\/shop_images\/pp_top_slp_slide3_bc12d072-ca68-45f7-9b64-ae1624519667.jpg"
           }
         }
       },
