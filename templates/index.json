@@ -126,11 +126,18 @@
           "settings": {
             "slideshow-image": "shopify:\/\/shop_images\/cafe-photo2.jpg"
           }
+        },
+        "d1958d96-fd17-4d4e-be50-955d20631678": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/cafe-photo3.jpg"
+          }
         }
       },
       "block_order": [
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0",
-        "56fb03c2-c2fb-446e-9951-02d388d5c1fa"
+        "56fb03c2-c2fb-446e-9951-02d388d5c1fa",
+        "d1958d96-fd17-4d4e-be50-955d20631678"
       ],
       "settings": {
         "video": "shopify:\/\/files\/videos\/video_shopinfo.mp4"
