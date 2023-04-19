@@ -120,10 +120,17 @@
           "settings": {
             "slideshow-image": "shopify:\/\/shop_images\/img_top-info_b22cc2b1-d9c3-450c-aee2-25e7b0d852e4.jpg"
           }
+        },
+        "56fb03c2-c2fb-446e-9951-02d388d5c1fa": {
+          "type": "slide",
+          "settings": {
+            "slideshow-image": "shopify:\/\/shop_images\/cafe-photo2.jpg"
+          }
         }
       },
       "block_order": [
-        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0"
+        "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0",
+        "56fb03c2-c2fb-446e-9951-02d388d5c1fa"
       ],
       "settings": {
         "video": "shopify:\/\/files\/videos\/video_shopinfo.mp4"
