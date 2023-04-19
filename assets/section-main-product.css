@@ -328,6 +328,12 @@ fieldset.product-form__input .form__label {
   margin-bottom: 0;
 }
 
+/* テキスト「合計」のスタイル */
+script + .product__text {
+  margin-top: 3rem;
+  margin-bottom: -1.5rem;
+}
+
 a.product__text {
   display: block;
   text-decoration: none;
