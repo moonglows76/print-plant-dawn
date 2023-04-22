@@ -3,7 +3,7 @@
 <div class="sec-top-mv">
   <div class="sec-top-mv__slider">
     <div class="sec-top-shopinfo__slider-item">
-      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, poster: 'assets/img_mv_poster.jpg' }}
     </div>
     {% comment %} {% for block in section.blocks %}  
     <div class="sec-top-mv__slider-item"><img src="{{ block.settings.slideshow-image | img_url: 'master' }}" alt="" width="3006" height="1796" loading="lazy"></div>
