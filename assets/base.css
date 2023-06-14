@@ -3208,6 +3208,10 @@ details-disclosure > details {
   width: calc(147.6672 / 52.0827 * 1em);
 }
 
+.icon-order {
+  width: calc(37.2822 / 15.9414 * 1em);
+}
+
 /*doc
 ---
 title: display changer

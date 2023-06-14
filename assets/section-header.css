@@ -24,6 +24,9 @@
 .icon-logo {
   width: 2.8352447166em;
 }
+.icon-order {
+  width: calc(37.2822 / 15.9414 * 1em);
+}
 
 
 /*!
@@ -325,6 +328,7 @@ category: component
   display: flex;
   -webkit-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 .nav__sitemap a .separator {
   font-size: 9px;
@@ -365,6 +369,14 @@ category: component
     font-size: 16px;
     line-height: 1;
   }
+}
+.nav__sitemap-order {
+  color: #9d9d9d;
+  font-size: 16px;
+  line-height: 1;
+  position: absolute;
+  left: 192px;
+  bottom: -1px;
 }
 .nav__logo {
   padding-top: 96px;
