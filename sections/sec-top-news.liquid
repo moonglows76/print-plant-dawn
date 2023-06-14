@@ -1,0 +1,65 @@
+{{ 'section-top-news.css' | asset_url | stylesheet_tag }}
+
+
+{% liquid
+  assign news_count = 0
+  for block in section.blocks
+    if block
+      assign news_count = news_count | plus: 1
+    endif
+  endfor
+%}
+
+{% if news_count != 0 %}
+  <section class="sec-top-news">
+    <div class="sec-top-shopinfo__inner wrapper container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="sec-top-news__list">
+            {% for block in section.blocks %}  
+              <div class="sec-top-news__item">
+                <div class="sec-top-news__date">{{ block.settings.news-date }}</div>
+                <div class="sec-top-news__title">{{ block.settings.news-title }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "トップページのニュース",
+    "blocks":[
+      {
+        "type": "news",
+        "name": "ニュース",
+        "settings":[
+          {
+            "type": "text",
+            "id": "news-date",
+            "label": "ニュース日付"
+          },
+          {
+            "type": "richtext",
+            "id": "news-title",
+            "label": "ニュースタイトル"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "トップページのニュース",
+        "category": "トップページ",
+        "blocks": [
+          { 
+            "type": "news"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
