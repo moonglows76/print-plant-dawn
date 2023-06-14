@@ -189,6 +189,9 @@ category: component
   height: 38px;
   color: #fff;
 }
+.header__btn-cart .icon.is-empty {
+  opacity: 0.4;
+}
 @media screen and (min-width: 968px) {
   .header__btn-cart {
     font-size: 22px;
