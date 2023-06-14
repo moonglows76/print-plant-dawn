@@ -147,14 +147,19 @@
           {%- endfor -%}
         </div><!-- /.footer__sitemap -->
         <div class="footer__sns">
-          <div class="footer__sns-heading sp-none">SNS</div>
+          <div class="footer__sns-heading sp-none">
+            <div>SNS</div>
+            <div>CONTACT</div>
+          </div>
           <ul class="list-unstyled">
             <li><a href="{{ settings.social_twitter_link | escape }}" target="_blank"><svg class="sprite-icon icon-twitter" role="img"><use xlink:href="#twitter"></use></svg></a></li>
             <li><a href="{{ settings.social_facebook_link | escape }}" target="_blank"><svg class="sprite-icon icon-facebook" role="img"><use xlink:href="#facebook"></use></svg></a></li>
             <li><a href="{{ settings.social_youtube_link | escape }}" target="_blank"><svg class="sprite-icon icon-youtube" role="img"><use xlink:href="#youtube"></use></svg></a></li>
             <li><a href="{{ settings.social_instagram_link | escape }}" target="_blank"><svg class="sprite-icon icon-instagram" role="img"><use xlink:href="#instagram"></use></svg></a></li>
             <li><a href="{{ settings.social_note_link | escape }}" target="_blank"><svg class="sprite-icon icon-note" role="img"><use xlink:href="#note"></use></svg></a></li>
+            <li class="footer__sns-item--contact"><a href="/pages/contact"><svg class="icon icon-contact" role="img"><use xlink:href="#contact"></use></svg></a></li>
           </ul>
+          <div class="footer__sns__btn-onlineshop"><a href="/collections/all">ONLINE SHOP</a></div>
         </div><!-- /.footer__sns -->
       </div><!-- /.footer__sitemap-sns -->
       <div class="footer__company">

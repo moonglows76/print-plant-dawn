@@ -406,14 +406,14 @@ category: component
 }
 .nav__sns {
   padding-top: 47px;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1;
   margin-left: -11px;
 }
 @media screen and (min-width: 968px) {
   .nav__sns {
     padding-top: 59px;
-    font-size: 23px;
+    font-size: 19px;
     line-height: 1;
     margin-left: -15px;
   }
@@ -437,4 +437,13 @@ category: component
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.nav__sns-item--contact::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #fff;
+  transform: rotate(-45deg) translate(1px, 6px);
 }
