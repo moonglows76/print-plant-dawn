@@ -54,6 +54,7 @@
     height: 4px;
   }
 }
+/* workshop */
 .blog-list__tags .is-red {
   background-color: var(--blog-tag-red);
 }
@@ -65,6 +66,20 @@
 }
 .blog-list__tags .is-gray {
   background-color: var(--blog-tag-gray);
+}
+
+/* articles */
+.blog-list__tags .is-gold {
+  background-color: var(--blog-tag-gold);
+}
+.blog-list__tags .is-pink {
+  background-color: var(--blog-tag-pink);
+}
+.blog-list__tags .is-lightgray {
+  background-color: var(--blog-tag-lightgray);
+}
+.blog-list__tags .is-darkgray {
+  background-color: var(--blog-tag-darkgray);
 }
 
 .blog-list__date {

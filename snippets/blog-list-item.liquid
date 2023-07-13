@@ -13,6 +13,7 @@
     </div>
     <div class="blog-list__text">
       <div class="blog-list__tags">
+        {% comment %} workshop {% endcomment %}
         {% if article.tags contains 'workshop' %}
           <span class="blog-list__tag is-red"></span>
         {% endif %}
@@ -24,6 +25,20 @@
         {% endif %}
         {% if article.tags contains 'news' %}
           <span class="blog-list__tag is-gray"></span>
+        {% endif %}
+
+        {% comment %} articles {% endcomment %}
+        {% if article.tags contains 'letterpress' %}
+          <span class="blog-list__tag is-gold"></span>
+        {% endif %}
+        {% if article.tags contains 'risograph' %}
+          <span class="blog-list__tag is-pink"></span>
+        {% endif %}
+        {% if article.tags contains 'paper' %}
+          <span class="blog-list__tag is-lightgray"></span>
+        {% endif %}
+        {% if article.tags contains 'other' %}
+          <span class="blog-list__tag is-darkgray"></span>
         {% endif %}
       </div>
       <div class="blog-list__date">
