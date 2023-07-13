@@ -3591,6 +3591,7 @@ category: layout
     height: 8px;
   }
 }
+/* workshop */
 .blog-category__colors-item.is-yellow {
   background-color: var(--blog-tag-yellow);
 }
@@ -3602,6 +3603,19 @@ category: layout
 }
 .blog-category__colors-item.is-gray {
   background-color: var(--blog-tag-gray);
+}
+/* articles */
+.blog-category__colors-item.is-gold {
+  background-color: var(--blog-tag-gold);
+}
+.blog-category__colors-item.is-pink {
+  background-color: var(--blog-tag-pink);
+}
+.blog-category__colors-item.is-lightgray {
+  background-color: var(--blog-tag-lightgray);
+}
+.blog-category__colors-item.is-darkgray {
+  background-color: var(--blog-tag-darkgray);
 }
 .blog-category__links {
   margin-top: 10px;
