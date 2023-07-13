@@ -1,0 +1,213 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+  <div class="main-blog page-width page-width--narrow section-{{ section.id }}-padding">
+    <div class="rte">
+      <div class="mv"><img src="https://cdn.shopify.com/s/files/1/0551/2783/4795/files/img_workshop_mv_2048x2048.jpg?v=1677922065" alt="" width="1504" height="631" loading="lazy"></div>
+      <h1 class="h1"><span class="h1__en">ARTICLES</span> <span class="h1__ja">記事一覧</span></h1>
+    </div>
+
+    <div class="blog-category">
+      <div class="blog-category__colors">
+        <span class="blog-category__colors-item is-gold"></span>
+        <span class="blog-category__colors-item is-pink"></span>
+        <span class="blog-category__colors-item is-lightgray"></span>
+        <span class="blog-category__colors-item is-darkgray"></span>
+      </div>
+      <div class="blog-category__links">
+        TAG : LETTERPRESS / RISOGRAPH / PAPER /  OTHER
+      </div>
+    </div>
+    
+    {% comment %} LETTERPRESS {% endcomment %}
+    <h2 class="h2" id="LETTERPRESS">LETTERPRESS</h2>
+    <ul class="blog-list">
+      {% comment %} ARTICLESのブログをループで50記事取得して最新のものを表示 {% endcomment %}
+      {% liquid
+        assign letterpress_count = 0
+        for article in blogs['ARTICLES'].articles limit: 50
+          if article.tags contains 'letterpress'
+            assign letterpress_count = letterpress_count | plus: 1
+            render 'blog-list-item', article: article, blog_handle: 'LETTERPRESS',
+          endif
+        endfor
+      %}
+    </ul>
+    {% if letterpress_count == 0 %}
+      <p class="no-blog-item center">
+        現在LETTERPRESSの記事はございません<br>
+      </p>
+    {% endif %}
+    
+    {% comment %} RISOGRAPH {% endcomment %}
+    <h2 class="h2">RISOGRAPH</h2>
+    <ul class="blog-list">
+      {% liquid
+        assign risograph_count = 0
+        for article in blogs['ARTICLES'].articles  limit: 50
+          if article.tags contains 'risograph'
+            assign risograph_count = risograph_count | plus: 1
+            render 'blog-list-item', article: article, blog_handle: 'RISOGRAPH',
+          endif
+        endfor
+      %}
+    </ul>
+    {% if risograph_count == 0 %}
+      <p class="no-blog-item center">
+        現在RISOGRAPHの記事はございません<br>
+      </p>
+    {% endif %}
+
+    {% comment %} PAPER {% endcomment %}
+    <h2 class="h2">PAPER</h2>
+    <ul class="blog-list">
+      {% liquid
+        assign paper_count = 0
+        for article in blogs['ARTICLES'].articles  limit: 50
+          if article.tags contains 'paper'
+            assign paper_count = paper_count | plus: 1
+            render 'blog-list-item', article: article, blog_handle: 'PAPER',
+          endif
+        endfor
+      %}
+    </ul>
+    {% if paper_count == 0 %}
+      <p class="no-blog-item center">
+        現在PAPERの記事はございません<br>
+      </p>
+    {% endif %}
+
+    {% comment %} OTHER {% endcomment %}
+    <h2 class="h2">OTHER</h2>
+    <ul class="blog-list">
+      {% liquid
+        assign other_count = 0
+        for article in blogs['ARTICLES'].articles  limit: 50
+        if article.tags contains 'other'
+          assign other_count = other_count | plus: 1
+          render 'blog-list-item', article: article, blog_handle: 'OTHER',
+          endif
+        endfor
+      %}
+    </ul>
+    {% if other_count == 0 %}
+      <p class="no-blog-item center">OTHERの記事はございません</p>
+    {% endif %}
+  </div>
+
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.main-blog.settings.layout.options__1.label"
+        },
+        {
+          "value": "collage",
+          "label": "t:sections.main-blog.settings.layout.options__2.label"
+        }
+      ],
+      "default": "collage",
+      "label": "t:sections.main-blog.settings.layout.label",
+      "info": "t:sections.main-blog.settings.layout.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label",
+      "info": "t:sections.main-blog.settings.image_height.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-blog.settings.paragraph.content"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
