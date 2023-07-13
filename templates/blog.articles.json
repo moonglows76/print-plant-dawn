@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-blog",
+      "type": "main-blog-articles",
       "settings": {
         "layout": "grid",
         "show_image": true,
