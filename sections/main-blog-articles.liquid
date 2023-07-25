@@ -24,92 +24,159 @@
 
     <div class="blog-category">
       <div class="blog-category__colors">
-        <span class="blog-category__colors-item is-gold"></span>
-        <span class="blog-category__colors-item is-pink"></span>
-        <span class="blog-category__colors-item is-lightgray"></span>
-        <span class="blog-category__colors-item is-darkgray"></span>
+        <a href="/blogs/articles/tagged/letterpress" class="blog-category__colors-item is-gold"><span class="sr-only">LETTERPRESS</span></a>
+        <a href="/blogs/articles/tagged/risograph" class="blog-category__colors-item is-pink"><span class="sr-only">RISOGRAPH</span></a>
+        <a href="/blogs/articles/tagged/paper" class="blog-category__colors-item is-lightgray"><span class="sr-only">PAPER</span></a>
+        <a href="/blogs/articles/tagged/other" class="blog-category__colors-item is-darkgray"><span class="sr-only">OTHER</span></a>
       </div>
       <div class="blog-category__links">
-        TAG : LETTERPRESS / RISOGRAPH / PAPER /  OTHER
+        TAG : <a href="/blogs/articles/tagged/letterpress">LETTERPRESS</a> / <a href="/blogs/articles/tagged/risograph">RISOGRAPH</a> / <a href="/blogs/articles/tagged/paper">PAPER</a> /  <a href="/blogs/articles/tagged/other">OTHER</a>
       </div>
     </div>
-    
-    {% comment %} LETTERPRESS {% endcomment %}
-    <h2 class="h2" id="LETTERPRESS">LETTERPRESS</h2>
-    <ul class="blog-list">
-      {% comment %} ARTICLESのブログをループで50記事取得して最新のものを表示 {% endcomment %}
-      {% liquid
-        assign letterpress_count = 0
-        for article in blogs['ARTICLES'].articles limit: 50
-          if article.tags contains 'letterpress'
-            assign letterpress_count = letterpress_count | plus: 1
-            render 'blog-list-item', article: article, blog_handle: 'LETTERPRESS',
-          endif
-        endfor
-      %}
-    </ul>
-    {% if letterpress_count == 0 %}
-      <p class="no-blog-item center">
-        現在LETTERPRESSの記事はございません<br>
-      </p>
-    {% endif %}
-    
-    {% comment %} RISOGRAPH {% endcomment %}
-    <h2 class="h2">RISOGRAPH</h2>
-    <ul class="blog-list">
-      {% liquid
-        assign risograph_count = 0
-        for article in blogs['ARTICLES'].articles  limit: 50
-          if article.tags contains 'risograph'
-            assign risograph_count = risograph_count | plus: 1
-            render 'blog-list-item', article: article, blog_handle: 'RISOGRAPH',
-          endif
-        endfor
-      %}
-    </ul>
-    {% if risograph_count == 0 %}
-      <p class="no-blog-item center">
-        現在RISOGRAPHの記事はございません<br>
-      </p>
-    {% endif %}
 
-    {% comment %} PAPER {% endcomment %}
-    <h2 class="h2">PAPER</h2>
-    <ul class="blog-list">
-      {% liquid
-        assign paper_count = 0
-        for article in blogs['ARTICLES'].articles  limit: 50
-          if article.tags contains 'paper'
-            assign paper_count = paper_count | plus: 1
-            render 'blog-list-item', article: article, blog_handle: 'PAPER',
-          endif
-        endfor
-      %}
-    </ul>
-    {% if paper_count == 0 %}
-      <p class="no-blog-item center">
-        現在PAPERの記事はございません<br>
-      </p>
+    {% comment %} {% if current_tags == nil %}
+      <p>tag: nothing</p>
     {% endif %}
+    {% if current_tags == nil or current_tags contains 'letterpress' %}
+      <p>tag: letterpress</p>
+    {% endif %}
+    {% if current_tags == nil or current_tags contains 'risograph' %}
+      <p>tag: risograph</p>
+    {% endif %}
+    {% if current_tags == nil or current_tags contains 'paper' %}
+      <p>tag: paper</p>
+    {% endif %}
+    {% if current_tags == nil or current_tags contains 'other' %}
+      <p>tag: other</p>
+    {% endif %} {% endcomment %}
 
-    {% comment %} OTHER {% endcomment %}
-    <h2 class="h2">OTHER</h2>
-    <ul class="blog-list">
-      {% liquid
-        assign other_count = 0
-        for article in blogs['ARTICLES'].articles  limit: 50
-        if article.tags contains 'other'
-          assign other_count = other_count | plus: 1
-          render 'blog-list-item', article: article, blog_handle: 'OTHER',
-          endif
-        endfor
-      %}
-    </ul>
-    {% if other_count == 0 %}
-      <p class="no-blog-item center">OTHERの記事はございません</p>
-    {% endif %}
+
+    {% comment %} ページネーションの表示は50記事ごと {% endcomment %}
+    {%- paginate blog.articles by 50 -%}
+
+      {% comment %} LETTERPRESS {% endcomment %}
+      {% if current_tags == nil or current_tags contains 'letterpress' %}
+        <h2 class="h2" id="LETTERPRESS">LETTERPRESS</h2>
+        <ul class="blog-list">
+          {% comment %} ARTICLESのブログをループで50記事取得して最新のものを表示 {% endcomment %}
+          {% liquid
+            assign letterpress_count = 0
+            for article in blog.articles
+              if article.tags contains 'letterpress'
+                assign letterpress_count = letterpress_count | plus: 1
+                render 'blog-list-item', article: article, blog_handle: 'LETTERPRESS',
+              endif
+            endfor
+          %}
+        </ul>
+        {% if letterpress_count == 0 %}
+          {% comment %} 記事がないとき {% endcomment %}
+          <p class="no-blog-item center">
+            現在LETTERPRESSの記事はございません<br>
+          </p>
+        {% elsif current_tags == nil %}
+          {% comment %} タグを絞り込んでないとき {% endcomment %}
+          <div class="link-with-arrow right">
+            <a href="/blogs/articles/tagged/letterpress" class="link-with-arrow__link">
+              <span class="link-with-arrow__text">LETTERPRESSの記事一覧へ</span>
+              <svg class="link-with-arrow__icon sprite-icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg>
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% comment %} RISOGRAPH {% endcomment %}
+      {% if current_tags == nil or current_tags contains 'risograph' %}
+        <h2 class="h2">RISOGRAPH</h2>
+        <ul class="blog-list">
+          {% liquid
+            assign risograph_count = 0
+            for article in blog.articles
+              if article.tags contains 'risograph'
+                assign risograph_count = risograph_count | plus: 1
+                render 'blog-list-item', article: article, blog_handle: 'RISOGRAPH',
+              endif
+            endfor
+          %}
+        </ul>
+        {% if risograph_count == 0 %}
+          <p class="no-blog-item center">
+            現在RISOGRAPHの記事はございません<br>
+          </p>
+        {% elsif current_tags == nil %}
+          {% comment %} タグを絞り込んでないとき {% endcomment %}
+          <div class="link-with-arrow right">
+            <a href="/blogs/articles/tagged/risograph" class="link-with-arrow__link">
+              <span class="link-with-arrow__text">RISOGRAPHの記事一覧へ</span>
+              <svg class="link-with-arrow__icon sprite-icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg>
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% comment %} PAPER {% endcomment %}
+      {% if current_tags == nil or current_tags contains 'paper' %}
+        <h2 class="h2">PAPER</h2>
+        <ul class="blog-list">
+          {% liquid
+            assign paper_count = 0
+            for article in blog.articles
+              if article.tags contains 'paper'
+                assign paper_count = paper_count | plus: 1
+                render 'blog-list-item', article: article, blog_handle: 'PAPER',
+              endif
+            endfor
+          %}
+        </ul>
+        {% if paper_count == 0 %}
+          <p class="no-blog-item center">
+            現在PAPERの記事はございません<br>
+          </p>
+        {% elsif current_tags == nil %}
+          {% comment %} タグを絞り込んでないとき {% endcomment %}
+          <div class="link-with-arrow right">
+            <a href="/blogs/articles/tagged/paper" class="link-with-arrow__link">
+              <span class="link-with-arrow__text">PAPERの記事一覧へ</span>
+              <svg class="link-with-arrow__icon sprite-icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg>
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% comment %} OTHER {% endcomment %}
+      {% if current_tags == nil or current_tags contains 'other' %}
+        <h2 class="h2">OTHER</h2>
+        <ul class="blog-list">
+          {% liquid
+            assign other_count = 0
+            for article in blog.articles
+            if article.tags contains 'other'
+              assign other_count = other_count | plus: 1
+              render 'blog-list-item', article: article, blog_handle: 'OTHER',
+              endif
+            endfor
+          %}
+        </ul>
+        {% if other_count == 0 %}
+          <p class="no-blog-item center">OTHERの記事はございません</p>
+        {% elsif current_tags == nil %}
+          {% comment %} タグを絞り込んでないとき {% endcomment %}
+          <div class="link-with-arrow right">
+            <a href="/blogs/articles/tagged/other" class="link-with-arrow__link">
+              <span class="link-with-arrow__text">OTHERの記事一覧へ</span>
+              <svg class="link-with-arrow__icon sprite-icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg>
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% comment %} ページネーション表示 {% endcomment %}
+      {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    {%- endpaginate -%}
+  
   </div>
-
 {% schema %}
 {
   "name": "t:sections.main-blog.name",

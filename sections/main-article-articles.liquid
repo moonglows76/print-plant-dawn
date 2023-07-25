@@ -37,32 +37,32 @@
             <div class="blog-category is-article">
               <div class="blog-category__colors">
                 {% if article.tags contains 'letterpress' %}
-                  <span class="blog-category__colors-item is-gold"></span>
+                  <a href="/blogs/articles/tagged/letterpress" class="blog-category__colors-item is-gold"><span class="sr-only">LETTERPRESS</span></a>
                 {% endif %}
                 {% if article.tags contains 'risograph' %}
-                  <span class="blog-category__colors-item is-pink"></span>
+                  <a href="/blogs/articles/tagged/risograph" class="blog-category__colors-item is-pink"><span class="sr-only">RISOGRAPH</span></a>
                 {% endif %}
                 {% if article.tags contains 'paper' %}
-                  <span class="blog-category__colors-item is-lightgray"></span>
+                  <a href="/blogs/articles/tagged/paper" class="blog-category__colors-item is-lightgray"><span class="sr-only">PAPER</span></a>
                 {% endif %}
                 {% if article.tags contains 'other' %}
-                  <span class="blog-category__colors-item is-darkgray"></span>
+                  <a href="/blogs/articles/tagged/other" class="blog-category__colors-item is-darkgray"><span class="sr-only">OTHER</span></a>
                 {% endif %}
               </div>
               <div class="blog-category__links">
                 TAG : 
                 <span class="blog-category__links-wrapper">
                   {% if article.tags contains 'letterpress' %}
-                    <span class="blog-category__links-item">LETTERPRESS</span>
+                    <a href="/blogs/articles/tagged/letterpress" class="blog-category__links-item">LETTERPRESS</a>
                   {% endif %}
                   {% if article.tags contains 'risograph' %}
-                    <span class="blog-category__links-item">RISOGRAPH</span>
+                    <a href="/blogs/articles/tagged/risograph" class="blog-category__links-item">RISOGRAPH</a>
                   {% endif %}
                   {% if article.tags contains 'paper' %}
-                    <span class="blog-category__links-item">PAPER</span>
+                    <a href="/blogs/articles/tagged/paper" class="blog-category__links-item">PAPER</a>
                   {% endif %}
                   {% if article.tags contains 'other' %}
-                    <span class="blog-category__links-item">OTHER</span>
+                    <a href="/blogs/articles/tagged/other" class="blog-category__links-item">OTHER</a>
                   {% endif %}
                 </span>
               </div>
