@@ -36,60 +36,73 @@
       </div>
     </div>
 
-    <h2 class="h2" id="WORKSHOP">現在募集中ワークショップ </h2>
-    <ul class="blog-list">
-      {% comment %} WORKSHOPのブログをループで20記事取得して募集中のものだけ表示 {% endcomment %}
-      {% liquid
-        assign workshop_count = 0
-        for article in blogs['WORKSHOP'].articles limit: 50
-          if article.tags contains 'wanted' and article.tags contains 'workshop'
-            assign workshop_count = workshop_count | plus: 1
-            render 'blog-list-item', article: article, blog_handle: 'WORKSHOP',
-          endif
-        endfor
-      %}
-    </ul>
-    {% if workshop_count == 0 %}
-      <p class="no-blog-item center">
-        現在募集中のワークショップはございません<br>
-        次回の募集をお待ち下さい
-      </p>
-    {% endif %}
+    {% comment %} ページネーションの表示は50記事ごと {% endcomment %}
+    {%- paginate blog.articles by 50 -%}
 
-    <h2 class="h2">募集中の教室 </h2>
-    <ul class="blog-list">
-      {% liquid
-        assign class_count = 0
-        for article in blogs['WORKSHOP'].articles  limit: 50
-          if article.tags contains 'wanted' and article.tags contains 'class'
-            assign class_count = class_count | plus: 1
-            render 'blog-list-item', article: article, blog_handle: 'CLASS',
-          endif
-        endfor
-      %}
-    </ul>
-    {% if class_count == 0 %}
-      <p class="no-blog-item center">
-        現在募集中の教室はございません<br>
-        次回の募集をお待ち下さい
-      </p>
-    {% endif %}
+      {% comment %} WORKSHOP {% endcomment %}
+      <h2 class="h2" id="WORKSHOP">現在募集中ワークショップ </h2>
+      <ul class="blog-list">
+        {% comment %} WORKSHOPのブログをループで20記事取得して募集中のものだけ表示 {% endcomment %}
+        {% liquid
+          assign workshop_count = 0
+          for article in blog.articles
+            if article.tags contains 'wanted' and article.tags contains 'workshop'
+              assign workshop_count = workshop_count | plus: 1
+              render 'blog-list-item', article: article, blog_handle: 'WORKSHOP',
+            endif
+          endfor
+        %}
+      </ul>
+      {% if workshop_count == 0 %}
+        <p class="no-blog-item center">
+          現在募集中のワークショップはございません<br>
+          次回の募集をお待ち下さい
+        </p>
+      {% endif %}
 
-    <h2 class="h2">その他のお知らせ</h2>
-    <ul class="blog-list">
-      {% liquid
-        assign news_count = 0
-        for article in blogs['WORKSHOP'].articles  limit: 50
-        if article.tags contains 'news'
-          assign news_count = news_count | plus: 1
-          render 'blog-list-item', article: article, blog_handle: 'NEWS',
-          endif
-        endfor
-      %}
-    </ul>
-    {% if news_count == 0 %}
-      <p class="no-blog-item center">現在お知らせはございません</p>
-    {% endif %}
+      {% comment %} CLASS {% endcomment %}
+      <h2 class="h2">募集中の教室 </h2>
+      <ul class="blog-list">
+        {% liquid
+          assign class_count = 0
+          for article in blog.articles
+            if article.tags contains 'wanted' and article.tags contains 'class'
+              assign class_count = class_count | plus: 1
+              render 'blog-list-item', article: article, blog_handle: 'CLASS',
+            endif
+          endfor
+        %}
+      </ul>
+      {% if class_count == 0 %}
+        <p class="no-blog-item center">
+          現在募集中の教室はございません<br>
+          次回の募集をお待ち下さい
+        </p>
+      {% endif %}
+
+      {% comment %} NEWS {% endcomment %}
+      <h2 class="h2">その他のお知らせ</h2>
+      <ul class="blog-list">
+        {% liquid
+          assign news_count = 0
+          for article in blog.articles
+          if article.tags contains 'news'
+            assign news_count = news_count | plus: 1
+            render 'blog-list-item', article: article, blog_handle: 'NEWS',
+            endif
+          endfor
+        %}
+      </ul>
+      {% if news_count == 0 %}
+        <p class="no-blog-item center">現在お知らせはございません</p>
+      {% endif %}
+
+      {% comment %} ページネーション表示 {% endcomment %}
+      {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    {%- endpaginate -%}
+
   </div>
 
 {% schema %}
