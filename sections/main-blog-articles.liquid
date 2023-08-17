@@ -176,6 +176,15 @@
       {%- endif -%}
     {%- endpaginate -%}
   
+    {% if current_tags != nil %}
+      <div class="article-template__back element-margin-top link-with-arrow center">
+        <a href="/blogs/articles" class="link-with-arrow__link is-back">
+          <svg class="link-with-arrow__icon sprite-icon icon-arrow" role="img"><use xlink:href="#arrow"></use></svg>
+          <span class="link-with-arrow__text">{{ 'blogs.article.back_to_articles' | t }}</span>
+        </a>
+      </div>
+    {%- endif -%}
+
   </div>
 {% schema %}
 {
