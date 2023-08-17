@@ -21,10 +21,18 @@
           "type": "news",
           "settings": {
             "news-date": "2023-08-17",
-            "news-title": "<p>8\/17の営業は15時までとなります<\/p>"
+            "news-title": "<p>8\/17の営業は15時までとなります <a href=\"https:\/\/g.page\/PrintPlant?share\" target=\"_blank\" title=\"https:\/\/g.page\/PrintPlant?share\">&gt;<\/a><\/p>"
           }
         },
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
+          "type": "news",
+          "disabled": true,
+          "settings": {
+            "news-date": "",
+            "news-title": ""
+          }
+        },
+        "5af02057-5a24-4456-a956-d01a7001cb4c": {
           "type": "news",
           "disabled": true,
           "settings": {
@@ -35,7 +43,8 @@
       },
       "block_order": [
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0",
-        "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2"
+        "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2",
+        "5af02057-5a24-4456-a956-d01a7001cb4c"
       ],
       "settings": {
       }
