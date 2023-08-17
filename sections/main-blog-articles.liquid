@@ -56,7 +56,7 @@
 
       {% comment %} LETTERPRESS {% endcomment %}
       {% if current_tags == nil or current_tags contains 'letterpress' %}
-        <h2 class="h2" id="LETTERPRESS">LETTERPRESS</h2>
+        <h2 class="h2" lang="en" id="LETTERPRESS">LETTERPRESS</h2>
         <ul class="blog-list">
           {% comment %} ARTICLESのブログをループで50記事取得して最新のものを表示 {% endcomment %}
           {% liquid
@@ -87,7 +87,7 @@
 
       {% comment %} RISOGRAPH {% endcomment %}
       {% if current_tags == nil or current_tags contains 'risograph' %}
-        <h2 class="h2">RISOGRAPH</h2>
+        <h2 class="h2" lang="en">RISOGRAPH</h2>
         <ul class="blog-list">
           {% liquid
             assign risograph_count = 0
@@ -116,7 +116,7 @@
 
       {% comment %} PAPER {% endcomment %}
       {% if current_tags == nil or current_tags contains 'paper' %}
-        <h2 class="h2">PAPER</h2>
+        <h2 class="h2" lang="en">PAPER</h2>
         <ul class="blog-list">
           {% liquid
             assign paper_count = 0
@@ -145,7 +145,7 @@
 
       {% comment %} OTHER {% endcomment %}
       {% if current_tags == nil or current_tags contains 'other' %}
-        <h2 class="h2">OTHER</h2>
+        <h2 class="h2" lang="en">OTHER</h2>
         <ul class="blog-list">
           {% liquid
             assign other_count = 0

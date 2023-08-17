@@ -611,6 +611,13 @@ h2,
   margin: 70px 0 25px;
 }
 
+h2:lang(en),
+.h2:lang(en) {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  letter-spacing: .16em;
+}
+
 .h2__en {
   display: block;
   font-size: 1rem;
