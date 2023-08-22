@@ -20,12 +20,13 @@
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
           "type": "news",
           "settings": {
-            "news-date": "2023-08-17",
-            "news-title": "<p><a href=\"https:\/\/g.page\/PrintPlant?share\" target=\"_blank\" title=\"https:\/\/g.page\/PrintPlant?share\">8\/17の営業は15時までとなります<\/a><\/p>"
+            "news-date": "2023-08-21",
+            "news-title": "<p><a href=\"https:\/\/print-plant.peatix.com\/\" target=\"_blank\" title=\"https:\/\/print-plant.peatix.com\/\">活版リソグラフのワークショップ参加者募集中です<\/a><\/p>"
           }
         },
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
+          "disabled": true,
           "settings": {
             "news-date": "2023-08-17",
             "news-title": "<p>(お盆休み) 8\/18から11:00-19:00の通常営業となります<\/p>"
