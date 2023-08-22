@@ -38,26 +38,27 @@ category: top
   margin-top: 20px;
 }
 .sec-top-news__date {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 20px;
-  flex: 100px 0 0;
+  flex: 85px 0 0;
 }
 @media screen and (min-width: 968px) {
-  .sec-top-news__list {
+  .sec-top-news__date {
     font-size: 13px;
     flex-basis: 110px;
   }
 }
 .sec-top-news__title {
-  font-size: 13px;
+  font-size: 11px;
   line-height: 20px;
   flex: auto 1 1;
-  padding-left: 25px;
+  padding-left: 20px;
   position: relative;
 }
 @media screen and (min-width: 968px) {
-  .sec-top-news__list {
+  .sec-top-news__title {
     font-size: 14px;
+    padding-left: 25px;
   }
 }
 .sec-top-news__title::before {
