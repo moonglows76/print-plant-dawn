@@ -19,6 +19,7 @@
       "blocks": {
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
+          "disabled": true,
           "settings": {
             "news-date": "2023-11-22",
             "news-title": "<p><a href=\"https:\/\/tokyoartbookfair.com\/\" target=\"_blank\" title=\"https:\/\/tokyoartbookfair.com\/\">2023 Tokyo Art Book Fair<\/a>に「ALBATRO DESIGN」として出展いたします（ブース PR-212）<\/p>"
@@ -27,8 +28,8 @@
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
           "type": "news",
           "settings": {
-            "news-date": "2023-11-23",
-            "news-title": "<p><a href=\"https:\/\/print-plant.peatix.com\/\" target=\"_blank\" title=\"https:\/\/print-plant.peatix.com\/\">12月までのワークショップ（活版 \/ リソグラフ）日程公開しました<\/a><\/p>"
+            "news-date": "2023-12-01",
+            "news-title": "<p><a href=\"https:\/\/print-plant.peatix.com\/\" target=\"_blank\" title=\"https:\/\/print-plant.peatix.com\/\">2024年1月までのワークショップ（活版 \/ リソグラフ）日程公開しました<\/a><\/p>"
           }
         },
         "5af02057-5a24-4456-a956-d01a7001cb4c": {
