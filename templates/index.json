@@ -19,9 +19,10 @@
       "blocks": {
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
+          "disabled": true,
           "settings": {
-            "news-date": "2024-3-11",
-            "news-title": "<p><a href=\"\/blogs\/workshop\/riso-master-class\" title=\"(募集中) RISOGRAPH クリエイター向けリソマスタークラス\">5月度のRISOGRAPHマスターコースの募集をスタートしました<\/a><\/p>"
+            "news-date": "2024-6-15",
+            "news-title": "<p>ALBATRO DESIGNの展示が代官山T-SITEで開催中<\/p>"
           }
         },
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
