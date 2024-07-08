@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "1eb81f98-29f8-48ce-abc5-777a47124119": {
@@ -20,8 +29,8 @@
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
           "settings": {
-            "news-date": "2024-6-15",
-            "news-title": "<p><a href=\"\/blogs\/news\/the-avant-garde-of-risograph-and-letterpress\" title=\"展示「リソグラフ + 活版印刷の前衛作品 The Avant-Garde of Risograph and Letterpress」\">ALBATRO DESIGNの展示が代官山T-SITEで開催中<\/a><\/p>"
+            "news-date": "2024-7-5",
+            "news-title": "<p><a href=\"\/blogs\/news\/the-avant-garde-of-risograph-and-letterpress\" title=\"展示「リソグラフ + 活版印刷の前衛作品 The Avant-Garde of Risograph and Letterpress」\">代官山T-SITEのALBATRO DESIGNの展示が会期延長されました（〜7\/16まで）<\/a><\/p>"
           }
         },
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
