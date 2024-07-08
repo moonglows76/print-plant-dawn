@@ -3412,7 +3412,7 @@ category: layout
   background-color: #e8f5ff;
   box-shadow: 0 0 0 1px #00afff;
   color: rgba(var(--color-foreground), 1);  // 追加
-  font-weight: 400;                         // 追加
+  font-weight: 300;                         // 追加
 }
 .btn-primary .btn__icon {
   background-color: #97d8f4;
