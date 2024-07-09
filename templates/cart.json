@@ -12,7 +12,7 @@
     "cart-items": {
       "type": "main-cart-items",
       "custom_css": [
-
+        "@media screen and (max-width: 750px) {.cart__empty-text {\/*カートは空です*\/ font-size: 10px; } }"
       ],
       "settings": {
         "padding_top": 60,
