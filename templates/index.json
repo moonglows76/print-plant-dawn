@@ -29,8 +29,8 @@
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
           "settings": {
-            "news-date": "2024-7-5",
-            "news-title": "<p><a href=\"\/blogs\/news\/the-avant-garde-of-risograph-and-letterpress\" title=\"展示「リソグラフ + 活版印刷の前衛作品 The Avant-Garde of Risograph and Letterpress」\">代官山T-SITEのALBATRO DESIGNの展示が会期延長されました（〜7\/16まで）<\/a><\/p>"
+            "news-date": "2024-8-1",
+            "news-title": "<p>8\/3（火）、8\/12（月祝）お休みいたします<\/p>"
           }
         },
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
@@ -303,6 +303,7 @@
             "title": "",
             "title_color": "",
             "alignment": "center",
+            "background_color": "",
             "html_area": ""
           }
         }
