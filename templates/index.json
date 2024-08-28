@@ -28,6 +28,7 @@
       "blocks": {
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
+          "disabled": true,
           "settings": {
             "news-date": "2024-8-1",
             "news-title": "<p>8\/3（火）、8\/12（月祝）お休みいたします<\/p>"
