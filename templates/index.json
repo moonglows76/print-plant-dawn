@@ -1,18 +1,18 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1eb81f98-29f8-48ce-abc5-777a47124119": {
       "type": "sec-top-mv",
       "settings": {
-        "video": "shopify:\/\/files\/videos\/video_shopinfo.mp4",
+        "video": "shopify://files/videos/video_shopinfo.mp4",
         "title": "PRINT + PLANT",
         "description-en": "LETTERPRESS AND PLANTS SPECIMENT<br>BY ALBATRO DESIGN",
         "description-ka": "デザイン会社の<br>運営する活版印刷所"
@@ -20,18 +20,16 @@
     },
     "36b4cc80-8700-459e-a3af-541928e9ed2e": {
       "type": "nav-top-service",
-      "settings": {
-      }
+      "settings": {}
     },
     "16c33a96-8b66-48e2-8337-8fdaa8d7942d": {
       "type": "sec-top-news",
       "blocks": {
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
-          "disabled": true,
           "settings": {
-            "news-date": "2024-8-1",
-            "news-title": "<p>8\/3（火）、8\/12（月祝）お休みいたします<\/p>"
+            "news-date": "2024-11-27",
+            "news-title": "<p>11/28〜12/1 東京アートブックフェアに参加いたします</p>"
           }
         },
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
@@ -39,7 +37,7 @@
           "disabled": true,
           "settings": {
             "news-date": "2024-1-15",
-            "news-title": "<p><a href=\"https:\/\/print-plant.peatix.com\/\" target=\"_blank\" title=\"https:\/\/print-plant.peatix.com\/\">2024年2月までのワークショップ（活版 \/ リソグラフ）日程公開しました<\/a><\/p>"
+            "news-title": "<p><a href=\"https://print-plant.peatix.com/\" target=\"_blank\" title=\"https://print-plant.peatix.com/\">2024年2月までのワークショップ（活版 / リソグラフ）日程公開しました</a></p>"
           }
         },
         "5af02057-5a24-4456-a956-d01a7001cb4c": {
@@ -56,8 +54,7 @@
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0",
         "5af02057-5a24-4456-a956-d01a7001cb4c"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "3a74d753-7246-4969-a402-fe8e189e3ebf": {
       "type": "sec-top-primary-service",
@@ -65,19 +62,19 @@
         "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-0": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_businesscard_01.jpg"
+            "slideshow-image": "shopify://shop_images/img_businesscard_01.jpg"
           }
         },
         "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-1": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/pp_top_lp_slide2_3e8eaa29-e100-420d-9cae-55390d720c2d.jpg"
+            "slideshow-image": "shopify://shop_images/pp_top_lp_slide2_3e8eaa29-e100-420d-9cae-55390d720c2d.jpg"
           }
         },
         "template--15861052735659__3a74d753-7246-4969-a402-fe8e189e3ebf-167841315744b281b6-2": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/pp_top_lp_slide3.jpg"
+            "slideshow-image": "shopify://shop_images/pp_top_lp_slide3.jpg"
           }
         }
       },
@@ -89,8 +86,8 @@
       "settings": {
         "section-name": "letterpress",
         "title": "活版印刷",
-        "description": "<p>多色刷りや単色刷り、ご希望用紙や箔押し、抜き加工など柔軟にご相談ください。<br>\n入稿以外にも活版名刺に最適なレイアウトデザインと用紙の組合せもご用意しております。<\/p>",
-        "link": "shopify:\/\/pages\/letterpress",
+        "description": "<p>多色刷りや単色刷り、ご希望用紙や箔押し、抜き加工など柔軟にご相談ください。<br>\n入稿以外にも活版名刺に最適なレイアウトデザインと用紙の組合せもご用意しております。</p>",
+        "link": "shopify://pages/letterpress",
         "linktext-en": "LETTERPRESS",
         "linktext-ja": "活版印刷"
       }
@@ -101,19 +98,19 @@
         "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-0": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_top-special-letterpress.jpg"
+            "slideshow-image": "shopify://shop_images/img_top-special-letterpress.jpg"
           }
         },
         "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-1": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/pp_top_slp_slide2.jpg"
+            "slideshow-image": "shopify://shop_images/pp_top_slp_slide2.jpg"
           }
         },
         "template--15861052735659__3c0427e2-e802-4e3b-b43a-8bea767da0d0-16787704158637ef68-2": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/pp_top_slp_slide3_bc12d072-ca68-45f7-9b64-ae1624519667.jpg"
+            "slideshow-image": "shopify://shop_images/pp_top_slp_slide3_bc12d072-ca68-45f7-9b64-ae1624519667.jpg"
           }
         }
       },
@@ -125,8 +122,8 @@
       "settings": {
         "section-name": "special-letterpress",
         "title": "特殊活版",
-        "description": "<p>活版印刷の技術を研究、応用した当店だけの特殊な印刷技法を“特殊活版”と名付けました。<br>\n今まで見たことのないような新しい活版印刷の表現をお試しください。<\/p>",
-        "link": "shopify:\/\/pages\/special-letterpress",
+        "description": "<p>活版印刷の技術を研究、応用した当店だけの特殊な印刷技法を“特殊活版”と名付けました。<br>\n今まで見たことのないような新しい活版印刷の表現をお試しください。</p>",
+        "link": "shopify://pages/special-letterpress",
         "linktext-en": "SPECIAL LETTERPRESS",
         "linktext-ja": "特殊活版"
       }
@@ -135,11 +132,11 @@
       "type": "sec-top-secondary-service",
       "settings": {
         "section-name": "risograph",
-        "side-image": "shopify:\/\/shop_images\/img_top-risograph.jpg",
+        "side-image": "shopify://shop_images/img_top-risograph.jpg",
         "title-en": "RISOGRAPH",
         "title": "リソグラフ印刷",
-        "description": "<p>リソグラフは日本発祥の自動孔版印刷機で、とても発色の綺麗な印刷機になります。<br>\n活版印刷、箔押しとの併用印刷も可能です。<br>\n印刷受注だけでなく、Zineやポスター等作品作りのお手伝いも承ります。<\/p>",
-        "link": "shopify:\/\/pages\/risograph",
+        "description": "<p>リソグラフは日本発祥の自動孔版印刷機で、とても発色の綺麗な印刷機になります。<br>\n活版印刷、箔押しとの併用印刷も可能です。<br>\n印刷受注だけでなく、Zineやポスター等作品作りのお手伝いも承ります。</p>",
+        "link": "shopify://pages/risograph",
         "linktext-en": "RISOGRAPH",
         "linktext-ja": "リソグラフ印刷"
       }
@@ -148,11 +145,11 @@
       "type": "sec-top-secondary-service",
       "settings": {
         "section-name": "workshop",
-        "side-image": "shopify:\/\/shop_images\/img_top-workshop.jpg",
+        "side-image": "shopify://shop_images/img_top-workshop.jpg",
         "title-en": "WORKSHOP",
         "title": "ワークショップ",
-        "description": "<p>PRINT+PLANTでは活版印刷やリソグラフを中心としたアナログ印刷の研究を行っています。他にはない、より突っ込んだ印刷体験をワークショップや教室として定期開催しております。<br>\n是非お気軽にご参加ください。<\/p>",
-        "link": "shopify:\/\/blogs\/workshop",
+        "description": "<p>PRINT+PLANTでは活版印刷やリソグラフを中心としたアナログ印刷の研究を行っています。他にはない、より突っ込んだ印刷体験をワークショップや教室として定期開催しております。<br>\n是非お気軽にご参加ください。</p>",
+        "link": "shopify://blogs/workshop",
         "linktext-en": "WORKSHOP",
         "linktext-ja": "ワークショップ"
       }
@@ -163,19 +160,19 @@
         "template--15861052735659__09de5f0a-e335-4a6e-98e4-7c6d465319d0-1678413121dd499bce-0": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/img_top-info_b22cc2b1-d9c3-450c-aee2-25e7b0d852e4.jpg"
+            "slideshow-image": "shopify://shop_images/img_top-info_b22cc2b1-d9c3-450c-aee2-25e7b0d852e4.jpg"
           }
         },
         "56fb03c2-c2fb-446e-9951-02d388d5c1fa": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/cafe-photo2.jpg"
+            "slideshow-image": "shopify://shop_images/cafe-photo2.jpg"
           }
         },
         "d1958d96-fd17-4d4e-be50-955d20631678": {
           "type": "slide",
           "settings": {
-            "slideshow-image": "shopify:\/\/shop_images\/cafe-photo3.jpg"
+            "slideshow-image": "shopify://shop_images/cafe-photo3.jpg"
           }
         }
       },
@@ -185,7 +182,7 @@
         "d1958d96-fd17-4d4e-be50-955d20631678"
       ],
       "settings": {
-        "video": "shopify:\/\/files\/videos\/video_shopinfo.mp4"
+        "video": "shopify://files/videos/video_shopinfo.mp4"
       }
     },
     "a468d78d-a087-4ce0-aca8-b1e56151a6df": {
@@ -195,23 +192,23 @@
           "type": "menu",
           "settings": {
             "menu-name-en": "SPICY GINGER CHAI",
-            "menu-name-ja": "スパイシーチャイ (H\/C)",
+            "menu-name-ja": "スパイシーチャイ (H/C)",
             "menu-price": "¥600"
           }
         },
         "template--15861052735659__a468d78d-a087-4ce0-aca8-b1e56151a6df-1678413127efa4f92b-1": {
           "type": "menu",
           "settings": {
-            "menu-name-en": "COFFEE \/ ORIGINAL",
-            "menu-name-ja": "ドリップコーヒー (H\/C)",
+            "menu-name-en": "COFFEE / ORIGINAL",
+            "menu-name-ja": "ドリップコーヒー (H/C)",
             "menu-price": "¥500"
           }
         },
         "328c7a65-64e2-4fda-a4e3-a258026ce151": {
           "type": "menu",
           "settings": {
-            "menu-name-en": "COFFEE \/ MILK",
-            "menu-name-ja": "カフェオレ (H\/C)",
+            "menu-name-en": "COFFEE / MILK",
+            "menu-name-ja": "カフェオレ (H/C)",
             "menu-price": "¥500"
           }
         },
@@ -219,7 +216,7 @@
           "type": "menu",
           "settings": {
             "menu-name-en": "DECAF COFFEE",
-            "menu-name-ja": "デカフェ コーヒー (H\/C)",
+            "menu-name-ja": "デカフェ コーヒー (H/C)",
             "menu-price": "¥500"
           }
         },
@@ -227,8 +224,8 @@
           "type": "menu",
           "disabled": true,
           "settings": {
-            "menu-name-en": "COFFEE \/ MILK",
-            "menu-name-ja": "カフェオレ (H\/C)",
+            "menu-name-en": "COFFEE / MILK",
+            "menu-name-ja": "カフェオレ (H/C)",
             "menu-price": "¥500"
           }
         },
@@ -287,19 +284,17 @@
         "3616bcbd-b732-485e-beeb-8b4947b26a6b",
         "c6bf47f9-c18a-4572-8b60-e0b11da0127c"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "00aa0cfd-d7a4-49b5-9c5c-3f7e9aef31dc": {
       "type": "sec-top-shopinfo-3",
-      "settings": {
-      }
+      "settings": {}
     },
     "1679543363d899945e": {
       "type": "apps",
       "blocks": {
         "99807d19-79d3-4ba3-a841-6bef8f7bb599": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
