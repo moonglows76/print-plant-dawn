@@ -29,7 +29,14 @@
           "type": "news",
           "settings": {
             "news-date": "2024-11-27",
-            "news-title": "<p><a href=\"/blogs/news/tokyo-art-book-fair-2024\" title=\"「TOKYO ART BOOK FAIR 2024」に参加いたします\">11/28〜12/1 東京アートブックフェアに参加いたします</a></p>"
+            "news-title": "<p>「クリエイター向けリソマスタークラス」は12月、1月はお休みとなります。<br/>2025年2月を12月中より募集予定です。</p>"
+          }
+        },
+        "news_WEmMpa": {
+          "type": "news",
+          "settings": {
+            "news-date": "",
+            "news-title": ""
           }
         },
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
@@ -51,6 +58,7 @@
       },
       "block_order": [
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2",
+        "news_WEmMpa",
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0",
         "5af02057-5a24-4456-a956-d01a7001cb4c"
       ],
@@ -300,6 +308,7 @@
             "title_color": "",
             "alignment": "center",
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
