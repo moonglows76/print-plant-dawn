@@ -25,18 +25,18 @@
     "16c33a96-8b66-48e2-8337-8fdaa8d7942d": {
       "type": "sec-top-news",
       "blocks": {
+        "news_WEmMpa": {
+          "type": "news",
+          "settings": {
+            "news-date": "2025-01-01",
+            "news-title": "<p>年始は1/6(月)からの営業となります。本年もよろしくお願いいたします。</p>"
+          }
+        },
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
           "settings": {
             "news-date": "2024-11-27",
-            "news-title": "<p>「クリエイター向けリソマスタークラス」は12月、1月はお休みとなります。<br/>2025年2月を12月中より募集予定です。</p>"
-          }
-        },
-        "news_WEmMpa": {
-          "type": "news",
-          "settings": {
-            "news-date": "",
-            "news-title": ""
+            "news-title": "<p>1月は「クリエイター向けリソマスタークラス」および各種ワークショップはお休みをいただきます。2025年2月度分を募集予定です。</p>"
           }
         },
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
@@ -57,8 +57,8 @@
         }
       },
       "block_order": [
-        "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2",
         "news_WEmMpa",
+        "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2",
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0",
         "5af02057-5a24-4456-a956-d01a7001cb4c"
       ],
