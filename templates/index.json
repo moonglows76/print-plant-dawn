@@ -27,16 +27,17 @@
       "blocks": {
         "news_WEmMpa": {
           "type": "news",
+          "disabled": true,
           "settings": {
-            "news-date": "2025-01-01",
+            "news-date": "2025-01-8",
             "news-title": "<p>年始は1/6(月)からの営業となります。本年もよろしくお願いいたします。</p>"
           }
         },
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
           "settings": {
-            "news-date": "2024-11-27",
-            "news-title": "<p>1月は「クリエイター向けリソマスタークラス」および各種ワークショップはお休みをいただきます。2025年2月度分を募集予定です。</p>"
+            "news-date": "2025-01-08",
+            "news-title": "<p><a href=\"https://print-plant.com/blogs/workshop/riso-master-class\" target=\"_blank\" title=\"https://print-plant.com/blogs/workshop/riso-master-class\">2月度「クリエイター向けRISOマスタークラス」の募集をスタートしました</a></p>"
           }
         },
         "template--15861052735659__16c33a96-8b66-48e2-8337-8fdaa8d7942d-1689002541cbc057a1-0": {
