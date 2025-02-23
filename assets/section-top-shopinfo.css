@@ -8,6 +8,10 @@ category: footer
 */
 .sec-top-shopinfo {
   background-color: #ebebeb;
+  margin-top: 27px;
+  @media screen and (min-width: 968px) {
+    margin-top: 92px;
+  }
 }
 .sec-top-shopinfo__header {
   padding-top: 42px;

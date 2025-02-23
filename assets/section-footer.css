@@ -168,7 +168,6 @@ category: component
 #insta-feed {
   text-align: left;
   margin-top: 46px;
-  padding-bottom: 46px;
 }
 #insta-feed h2 {
   font-family: "silka", sans-serif;
@@ -185,7 +184,6 @@ category: component
 @media screen and (min-width: 968px) {
   #insta-feed {
     margin-top: 80px;
-    padding-bottom: 92px;
   }
   #insta-feed h2 {
     font-size: 18px;
