@@ -327,6 +327,10 @@
 }
 
 /* base */
+html {
+  container-type: inline-size;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
