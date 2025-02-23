@@ -135,6 +135,7 @@ button:disabled:not([disabled]):hover, [type=button]:disabled:not([disabled]):ho
   line-height: 1;
   margin: 0 2px;
 }
+[open] .btn-toggle::after,
 .btn-toggle.is-active::after {
   -webkit-transform: rotate(180deg) translateY(50%);
           transform: rotate(180deg) translateY(50%);

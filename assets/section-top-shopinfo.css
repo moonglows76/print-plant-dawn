@@ -2,7 +2,7 @@
 ---
 title: sec-top-shopinfo
 name: sec-top-shopinfo
-category: top
+category: footer
 ---
 
 */
@@ -359,6 +359,7 @@ category: top
 @media screen and (max-width: 967px) {
   .sec-top-shopinfo__menu {
     margin-top: 48px;
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 968px) {
@@ -453,14 +454,14 @@ category: top
   margin-right: 8px;
 }
 .sec-top-shopinfo__contact {
-  padding-top: 22px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 @media screen and (min-width: 968px) {
   .sec-top-shopinfo__contact {
     background-color: rgba(0, 0, 0, 0.05);
-    padding-top: 94px;
-    padding-bottom: 102px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .sec-top-shopinfo__contact-detail {
@@ -475,5 +476,30 @@ category: top
 @media screen and (min-width: 968px) {
   .sec-top-shopinfo__contact-detail .iota-grid {
     grid-gap: 40px;
+  }
+}
+
+
+
+
+/*doc
+---
+title: sec-store-schedule
+name: sec-store-schedule
+category: footer
+---
+
+*/
+.sec-store-schedule {
+  background-color: #f0f4f9;
+}
+.sec-store-schedule__body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 968px) {
+  .sec-store-schedule__body {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
