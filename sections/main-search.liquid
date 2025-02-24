@@ -206,20 +206,19 @@
                     {%- assign lazy_load = true -%}
                   {%- endif -%}
 
+                  {% unless item.tags contains '卸売' %}
                   <li class="grid__item">
                     {%- case item.object_type -%}
                       {%- when 'product' -%}
-                        {% unless item.tags contains '卸売' %}
-                          {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
-                          {% render 'card-product',
-                            card_product: item,
-                            media_aspect_ratio: section.settings.image_ratio,
-                            show_secondary_image: section.settings.show_secondary_image,
-                            show_vendor: section.settings.show_vendor,
-                            show_rating: section.settings.show_rating,
-                            lazy_load: lazy_load
-                          %}
-                        {% endunless %}
+                        {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
+                        {% render 'card-product',
+                          card_product: item,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          lazy_load: lazy_load
+                        %}
                       {%- when 'article' -%}
                         {% render 'article-card',
                           article: item,
@@ -249,6 +248,7 @@
                         </div>
                     {%- endcase -%}
                   </li>
+                  {% endunless %}
                 {%- endfor -%}
               </ul>
               {%- if paginate.pages > 1 -%}
