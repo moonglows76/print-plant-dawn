@@ -510,12 +510,12 @@ category: footer
 
 /*doc
 ---
-title: sec-top-shopinfo and sec-store-schedule buttons
-name: sec-top-shopinfo and sec-store-schedule buttons
+title: sec-top-shopinfo__contact and sec-store-schedule buttons
+name: sec-top-shopinfo__contact and sec-store-schedule buttons
 category: footer
 ---
 */
-.sec-top-shopinfo,
+.sec-top-shopinfo__contact,
 .sec-store-schedule {
   button, [type=button], [type=reset], [type=submit] {
     -webkit-appearance: none;
