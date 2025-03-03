@@ -297,6 +297,7 @@
     },
     "00aa0cfd-d7a4-49b5-9c5c-3f7e9aef31dc": {
       "type": "sec-top-shopinfo-3",
+      "disabled": true,
       "settings": {}
     },
     "1679543363d899945e": {

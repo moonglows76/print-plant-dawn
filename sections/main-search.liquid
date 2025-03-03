@@ -206,6 +206,7 @@
                     {%- assign lazy_load = true -%}
                   {%- endif -%}
 
+                  {% unless item.tags contains '卸売' %}
                   <li class="grid__item">
                     {%- case item.object_type -%}
                       {%- when 'product' -%}
@@ -247,6 +248,7 @@
                         </div>
                     {%- endcase -%}
                   </li>
+                  {% endunless %}
                 {%- endfor -%}
               </ul>
               {%- if paginate.pages > 1 -%}
