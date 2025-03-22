@@ -35,6 +35,7 @@
         },
         "215fe456-acc6-4979-a1e3-fd7d2c8bfcf2": {
           "type": "news",
+          "disabled": true,
           "settings": {
             "news-date": "2025-01-08",
             "news-title": "<p><a href=\"https://print-plant.com/blogs/workshop/riso-master-class\" target=\"_blank\" title=\"https://print-plant.com/blogs/workshop/riso-master-class\">2月度「クリエイター向けRISOマスタークラス」の募集をスタートしました</a></p>"
@@ -44,8 +45,8 @@
           "type": "news",
           "disabled": true,
           "settings": {
-            "news-date": "2024-1-15",
-            "news-title": "<p><a href=\"https://print-plant.peatix.com/\" target=\"_blank\" title=\"https://print-plant.peatix.com/\">2024年2月までのワークショップ（活版 / リソグラフ）日程公開しました</a></p>"
+            "news-date": "",
+            "news-title": ""
           }
         },
         "5af02057-5a24-4456-a956-d01a7001cb4c": {
